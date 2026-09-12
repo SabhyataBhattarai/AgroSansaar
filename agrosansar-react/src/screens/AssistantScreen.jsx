@@ -104,7 +104,7 @@ export default function AssistantScreen({ language, onToggleLanguage, onBack }) 
 
   // Text-To-Speech (Native Android TTS + Browser Web Speech + Audio stream fallback)
   const speakText = async (text) => {
-    if (!text || text === t.fallback) return;
+    if (!text) return;
     try {
       await ttsService.speak(
         text,

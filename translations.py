@@ -1,0 +1,43 @@
+translations = {
+
+    "ne": {
+
+        "tagline": "तपाईंको कृषि सहयोगी",
+
+        "assistant_title": "कृषि सहयोगी",
+        "assistant_subtitle": "कृषि सम्बन्धी प्रश्न\nसोध्नुहोस्",
+
+        "disease_title": "रोग पहिचान",
+        "disease_subtitle": "बालीको समस्या\nपहिचान गर्नुहोस्",
+
+        "weather_title": "मौसम",
+        "weather_subtitle": "मौसम सम्बन्धी\nजानकारी",
+
+        "about_title": "AgroSansar के हो?",
+        "about_subtitle": "एपबारे थप जानकारी",
+
+        "button": "EN"
+
+    },
+
+    "en": {
+
+        "tagline": "Your Agriculture Companion",
+
+        "assistant_title": "Assistant",
+        "assistant_subtitle": "Ask Agriculture\nQuestions",
+
+        "disease_title": "Disease Detection",
+        "disease_subtitle": "Identify Crop\nDiseases",
+
+        "weather_title": "Weather",
+        "weather_subtitle": "Weather\nInformation",
+
+        "about_title": "About AgroSansar",
+        "about_subtitle": "Learn More",
+
+        "button": "ने"
+
+    }
+
+}

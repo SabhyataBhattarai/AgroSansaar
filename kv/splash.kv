@@ -1,0 +1,74 @@
+<SplashScreen>:
+
+    MDBoxLayout:
+        orientation: "vertical"
+        md_bg_color: 0.965, 0.973, 0.949, 1
+        padding: "30dp"
+        spacing: "10dp"
+
+        Widget:
+            size_hint_y: 0.35
+
+        MDCard:
+            size_hint: None, None
+            size: "100dp", "100dp"
+            radius: [50]
+            md_bg_color: 0.114, 0.404, 0.216, 1
+            elevation: 10
+            pos_hint: {"center_x": .5}
+
+            AnchorLayout:
+                anchor_x: "center"
+                anchor_y: "center"
+
+                MDIcon:
+                    icon: "sprout"
+                    font_size: "50sp"
+                    theme_text_color: "Custom"
+                    text_color: 1, 1, 1, 1
+
+        MDLabel:
+            text: "AgroSansar"
+            halign: "center"
+            bold: True
+            font_size: "32sp"
+            theme_text_color: "Custom"
+            text_color: 0.114, 0.404, 0.216, 1
+            size_hint_y: None
+            height: "38dp"
+
+        MDLabel:
+            text: "तपाईंको कृषि सहयोगी"
+            font_name: "NepaliFont"
+            halign: "center"
+            font_size: "16sp"
+            theme_text_color: "Custom"
+            text_color: 0.42, 0.45, 0.42, 1
+            size_hint_y: None
+            height: "25dp"
+
+        Widget:
+            size_hint_y: 0.1
+
+        MDProgressBar:
+            id: progress_bar
+            size_hint_x: 0.5
+            size_hint_y: None
+            height: "4dp"
+            pos_hint: {"center_x": .5}
+            value: 0
+            color: 0.114, 0.404, 0.216, 1
+
+        MDLabel:
+            id: loading_label
+            text: "लोड हुँदै..."
+            font_name: "NepaliFont"
+            halign: "center"
+            font_size: "12sp"
+            theme_text_color: "Custom"
+            text_color: 0.55, 0.58, 0.55, 1
+            size_hint_y: None
+            height: "20dp"
+
+        Widget:
+            size_hint_y: 0.35

@@ -1,0 +1,32 @@
+# Python Virtual Environments
+venv/
+.venv/
+.venv_mac/
+env/
+ENV/
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Android Buildozer build directories & output APKs
+.buildozer/
+bin/
+
+# Heavy evaluation and training datasets (kept locally for model retraining)
+model_evaluation_test/
+disease/dataset/
+disease/models/*.keras
+disease/models/*.h5
+
+# Unused heavy binary models
+assets/ggml-tiny.bin
+
+# OS specific files
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.env

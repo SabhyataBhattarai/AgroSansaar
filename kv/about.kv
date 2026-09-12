@@ -1,0 +1,314 @@
+<AboutScreen>:
+
+    MDBoxLayout:
+        orientation: "vertical"
+        md_bg_color: 0.965, 0.973, 0.949, 1
+        padding: "16dp"
+        spacing: "12dp"
+
+        ####################################################
+        ## HEADER
+        ####################################################
+
+        BoxLayout:
+            size_hint_y: None
+            height: "48dp"
+            spacing: "6dp"
+
+            MDIconButton:
+                icon: "arrow-left"
+                theme_text_color: "Custom"
+                text_color: 0.114, 0.404, 0.216, 1
+                on_release:
+                    root.manager.current = "home"
+
+            BoxLayout:
+                orientation: "vertical"
+
+                MDLabel:
+                    id: page_title
+                    text: "हाम्रो बारेमा"
+                    font_name: "NepaliFont"
+                    bold: True
+                    font_size: "19sp"
+                    halign: "left"
+                    theme_text_color: "Custom"
+                    text_color: 0.114, 0.404, 0.216, 1
+
+                MDLabel:
+                    id: tagline
+                    text: "तपाईंको कृषि सहयोगी"
+                    font_name: "NepaliFont"
+                    font_size: "12.5sp"
+                    halign: "left"
+                    theme_text_color: "Custom"
+                    text_color: 0.42, 0.45, 0.42, 1
+
+            MDRaisedButton:
+                id: language_button
+                text: "EN"
+                font_name: "NepaliFont"
+                md_bg_color: 0.867, 0.929, 0.847, 1
+                text_color: 0.114, 0.404, 0.216, 1
+                elevation: 0
+                size_hint: None, None
+                size: "58dp", "40dp"
+
+                on_release:
+                    root.toggle_language()
+
+        ScrollView:
+            do_scroll_x: False
+
+            MDBoxLayout:
+                orientation: "vertical"
+                adaptive_height: True
+                spacing: "14dp"
+                padding: "2dp"
+
+                ################################################
+                ## CARD 1 — Brand (white, green accents only)
+                ################################################
+
+                MDCard:
+                    orientation: "vertical"
+                    adaptive_height: True
+                    radius: [24]
+                    elevation: 2
+                    padding: "20dp"
+                    spacing: "12dp"
+                    md_bg_color: 1, 1, 1, 1
+
+                    MDBoxLayout:
+                        adaptive_height: True
+                        spacing: "12dp"
+
+                        MDCard:
+                            size_hint: None, None
+                            size: "48dp", "48dp"
+                            radius: [24]
+                            elevation: 0
+                            md_bg_color: 0.867, 0.929, 0.847, 1
+
+                            AnchorLayout:
+                                MDIcon:
+                                    icon: "sprout"
+                                    font_size: "26sp"
+                                    theme_text_color: "Custom"
+                                    text_color: 0.114, 0.404, 0.216, 1
+
+                        MDLabel:
+                            text: "AgroSansar"
+                            bold: True
+                            font_size: "20sp"
+                            adaptive_height: True
+                            theme_text_color: "Custom"
+                            text_color: 0.114, 0.404, 0.216, 1
+                            pos_hint: {"center_y": .5}
+
+                    MDLabel:
+                        id: description
+                        text: "AgroSansar नेपाली किसानका लागि तयार गरिएको कृषि सहायक मोबाइल अनुप्रयोग हो। यसले कृषि सम्बन्धी प्रश्नहरूको उत्तर दिन्छ, मौसमको जानकारी उपलब्ध गराउँछ तथा गोलभेँडाको रोग पहिचान गर्न सहयोग गर्दछ।"
+                        font_name: "NepaliFont"
+                        halign: "left"
+                        text_size: self.width, None
+                        adaptive_height: True
+                        theme_text_color: "Custom"
+                        text_color: 0.29, 0.32, 0.29, 1
+                        font_size: "14sp"
+
+                ################################################
+                ## CARD 2 — Objectives
+                ################################################
+
+                MDCard:
+                    orientation: "vertical"
+                    adaptive_height: True
+                    radius: [24]
+                    elevation: 2
+                    padding: "20dp"
+                    spacing: "12dp"
+                    md_bg_color: 1, 1, 1, 1
+
+                    MDBoxLayout:
+                        adaptive_height: True
+                        spacing: "12dp"
+
+                        MDCard:
+                            size_hint: None, None
+                            size: "42dp", "42dp"
+                            radius: [14]
+                            elevation: 0
+                            md_bg_color: 0.867, 0.929, 0.847, 1
+
+                            AnchorLayout:
+                                MDIcon:
+                                    icon: "target"
+                                    font_size: "22sp"
+                                    theme_text_color: "Custom"
+                                    text_color: 0.114, 0.404, 0.216, 1
+
+                        MDLabel:
+                            id: objective_title
+                            text: "हाम्रो उद्देश्य"
+                            font_name: "NepaliFont"
+                            bold: True
+                            font_size: "17sp"
+                            adaptive_height: True
+                            theme_text_color: "Custom"
+                            text_color: 0.145, 0.161, 0.145, 1
+                            pos_hint: {"center_y": .5}
+
+                    MDBoxLayout:
+                        orientation: "vertical"
+                        adaptive_height: True
+                        spacing: "8dp"
+                        padding: "0dp", "4dp", "0dp", "0dp"
+
+                        MDLabel:
+                            id: objective1
+                            text: "नेपाली भाषामा कृषि जानकारी"
+                            font_name: "NepaliFont"
+                            halign: "left"
+                            text_size: self.width, None
+                            adaptive_height: True
+                            theme_text_color: "Custom"
+                            text_color: 0.29, 0.32, 0.29, 1
+                            font_size: "14sp"
+
+                        MDLabel:
+                            id: objective2
+                            text: "कृषि सम्बन्धी प्रश्नहरूको उत्तर"
+                            font_name: "NepaliFont"
+                            halign: "left"
+                            text_size: self.width, None
+                            adaptive_height: True
+                            theme_text_color: "Custom"
+                            text_color: 0.29, 0.32, 0.29, 1
+                            font_size: "14sp"
+
+                        MDLabel:
+                            id: objective3
+                            text: "मौसम सम्बन्धी जानकारी"
+                            font_name: "NepaliFont"
+                            halign: "left"
+                            text_size: self.width, None
+                            adaptive_height: True
+                            theme_text_color: "Custom"
+                            text_color: 0.29, 0.32, 0.29, 1
+                            font_size: "14sp"
+
+                        MDLabel:
+                            id: objective4
+                            text: "बाली रोग पहिचान"
+                            font_name: "NepaliFont"
+                            halign: "left"
+                            text_size: self.width, None
+                            adaptive_height: True
+                            theme_text_color: "Custom"
+                            text_color: 0.29, 0.32, 0.29, 1
+                            font_size: "14sp"
+
+                        MDLabel:
+                            id: objective5
+                            text: "आधुनिक कृषि प्रविधिमा सहयोग"
+                            font_name: "NepaliFont"
+                            halign: "left"
+                            text_size: self.width, None
+                            adaptive_height: True
+                            theme_text_color: "Custom"
+                            text_color: 0.29, 0.32, 0.29, 1
+                            font_size: "14sp"
+
+                ################################################
+                ## CARD 3 — Developers
+                ################################################
+
+                MDCard:
+                    orientation: "vertical"
+                    adaptive_height: True
+                    radius: [24]
+                    elevation: 2
+                    padding: "20dp"
+                    spacing: "12dp"
+                    md_bg_color: 1, 1, 1, 1
+
+                    MDBoxLayout:
+                        adaptive_height: True
+                        spacing: "12dp"
+
+                        MDCard:
+                            size_hint: None, None
+                            size: "42dp", "42dp"
+                            radius: [14]
+                            elevation: 0
+                            md_bg_color: 0.965, 0.937, 0.902, 1
+
+                            AnchorLayout:
+                                MDIcon:
+                                    icon: "account-circle"
+                                    font_size: "22sp"
+                                    theme_text_color: "Custom"
+                                    text_color: 0.804, 0.522, 0.247, 1
+
+                        MDLabel:
+                            id: developers_title
+                            text: "विकासकर्ता"
+                            font_name: "NepaliFont"
+                            bold: True
+                            font_size: "17sp"
+                            adaptive_height: True
+                            theme_text_color: "Custom"
+                            text_color: 0.145, 0.161, 0.145, 1
+                            pos_hint: {"center_y": .5}
+
+                    MDLabel:
+                        id: developer1
+                        text: "सभ्यता भट्टराई"
+                        font_name: "NepaliFont"
+                        halign: "left"
+                        text_size: self.width, None
+                        adaptive_height: True
+                        theme_text_color: "Custom"
+                        text_color: 0.29, 0.32, 0.29, 1
+                        font_size: "14.5sp"
+
+                    MDLabel:
+                        id: developer2
+                        text: "आयुष्मा गौतम"
+                        font_name: "NepaliFont"
+                        halign: "left"
+                        text_size: self.width, None
+                        adaptive_height: True
+                        theme_text_color: "Custom"
+                        text_color: 0.29, 0.32, 0.29, 1
+                        font_size: "14.5sp"
+
+                    MDSeparator:
+                        color: 0.9, 0.92, 0.89, 1
+
+                    MDLabel:
+                        id: course
+                        text: "बीसीए अन्तिम वर्ष"
+                        font_name: "NepaliFont"
+                        halign: "left"
+                        text_size: self.width, None
+                        adaptive_height: True
+                        theme_text_color: "Custom"
+                        text_color: 0.42, 0.45, 0.42, 1
+                        font_size: "13sp"
+
+                    MDLabel:
+                        id: university
+                        text: "त्रिभुवन विश्वविद्यालय"
+                        font_name: "NepaliFont"
+                        halign: "left"
+                        text_size: self.width, None
+                        adaptive_height: True
+                        theme_text_color: "Custom"
+                        text_color: 0.42, 0.45, 0.42, 1
+                        font_size: "13sp"
+
+                Widget:
+                    size_hint_y: None
+                    height: "16dp"

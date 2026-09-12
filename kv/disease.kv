@@ -1,0 +1,356 @@
+#:import FitImage kivymd.uix.fitimage.FitImage
+
+<DiseaseScreen>
+
+    MDBoxLayout:
+        orientation: "vertical"
+        md_bg_color: 0.965, 0.973, 0.949, 1
+        padding: "16dp"
+        spacing: "12dp"
+
+        ####################################################
+        ## HEADER
+        ####################################################
+
+        BoxLayout:
+            size_hint_y: None
+            height: "48dp"
+            spacing: "6dp"
+
+            MDIconButton:
+                icon: "arrow-left"
+                theme_text_color: "Custom"
+                text_color: 0.114, 0.404, 0.216, 1
+                on_release:
+                    root.manager.current = "home"
+
+            BoxLayout:
+                orientation: "vertical"
+
+                MDLabel:
+                    id: page_title
+                    text: "रोग पहिचान"
+                    font_name: "NepaliFont"
+                    bold: True
+                    font_size: "19sp"
+                    halign: "left"
+                    theme_text_color: "Custom"
+                    text_color: 0.114, 0.404, 0.216, 1
+
+                MDLabel:
+                    id: tagline
+                    text: "पातको फोटोबाट रोग पत्ता लगाउनुहोस्"
+                    font_name: "NepaliFont"
+                    font_size: "12.5sp"
+                    halign: "left"
+                    theme_text_color: "Custom"
+                    text_color: 0.42, 0.45, 0.42, 1
+
+            MDRaisedButton:
+                id: language_button
+                text: "EN"
+                font_name: "NepaliFont"
+                md_bg_color: 0.867, 0.929, 0.847, 1
+                text_color: 0.114, 0.404, 0.216, 1
+                elevation: 0
+                size_hint: None, None
+                size: "58dp", "40dp"
+                on_release:
+                    root.toggle_language()
+
+        ScrollView:
+            do_scroll_x: False
+
+            MDBoxLayout:
+                orientation: "vertical"
+                adaptive_height: True
+                spacing: "16dp"
+                padding: "2dp"
+
+                ####################################################
+                ## CAMERA SCAN & GALLERY PREVIEW CARD
+                ####################################################
+
+                MDCard:
+                    orientation: "vertical"
+                    adaptive_height: True
+                    radius: [24]
+                    elevation: 2
+                    padding: "18dp"
+                    spacing: "12dp"
+                    md_bg_color: 1, 1, 1, 1
+
+                    MDBoxLayout:
+                        size_hint_y: None
+                        height: "30dp"
+                        spacing: "8dp"
+
+                        MDIcon:
+                            icon: "camera"
+                            font_size: "20sp"
+                            theme_text_color: "Custom"
+                            text_color: 0.114, 0.404, 0.216, 1
+                            size_hint_x: None
+                            width: "24dp"
+
+                        MDLabel:
+                            id: camera_title
+                            text: "प्रत्यक्ष स्क्यान"
+                            font_name: "NepaliFont"
+                            halign: "left"
+                            bold: True
+                            font_size: "17sp"
+                            theme_text_color: "Custom"
+                            text_color: 0.145, 0.161, 0.145, 1
+
+                    FloatLayout:
+                        size_hint_y: None
+                        height: "200dp"
+
+                        FitImage:
+                            id: upload_preview
+                            source: ""
+                            size_hint: 1, 1
+                            pos_hint: {"x": 0, "y": 0}
+                            radius: [16]
+
+                        Image:
+                            id: camera_preview
+                            allow_stretch: True
+                            keep_ratio: True
+                            size_hint: 1, 1
+                            pos_hint: {"x": 0, "y": 0}
+                            opacity: 0
+
+                    MDBoxLayout:
+                        orientation: "vertical"
+                        size_hint_y: None
+                        adaptive_height: True
+                        spacing: "4dp"
+
+                        MDLabel:
+                            id: live_label
+                            text: "कैमरा पूर्वावलोकन रेडी"
+                            font_name: "NepaliFont"
+                            font_size: "13sp"
+                            halign: "center"
+                            theme_text_color: "Custom"
+                            text_color: 0.42, 0.45, 0.42, 1
+
+                    MDBoxLayout:
+                        size_hint_y: None
+                        height: "48dp"
+                        spacing: "10dp"
+
+                        MDFillRoundFlatButton:
+                            id: open_camera_button
+                            text: "क्यामेरा खोल्नुहोस्"
+                            font_name: "NepaliFont"
+                            md_bg_color: 0.114, 0.404, 0.216, 1
+                            text_color: 1, 1, 1, 1
+                            elevation: 0
+                            size_hint_x: 0.5
+                            on_release: root.open_camera()
+
+                        MDRaisedButton:
+                            id: capture_button
+                            text: "तस्वीर खिच्नुहोस्"
+                            font_name: "NepaliFont"
+                            md_bg_color: 0.867, 0.929, 0.847, 1
+                            text_color: 0.114, 0.404, 0.216, 1
+                            elevation: 0
+                            size_hint_x: 0.5
+                            on_release: root.capture_image()
+
+                ####################################################
+                ## DIVIDER "OR"
+                ####################################################
+
+                BoxLayout:
+                    size_hint_y: None
+                    height: "18dp"
+                    spacing: "10dp"
+
+                    MDSeparator:
+                        color: 0.87, 0.89, 0.86, 1
+
+                    MDLabel:
+                        id: or_label
+                        text: "वा"
+                        font_name: "NepaliFont"
+                        size_hint_x: None
+                        width: "30dp"
+                        halign: "center"
+                        theme_text_color: "Custom"
+                        text_color: 0.6, 0.62, 0.6, 1
+                        font_size: "12sp"
+
+                    MDSeparator:
+                        color: 0.87, 0.89, 0.86, 1
+
+                ####################################################
+                ## IMAGE UPLOAD (Gallery Option)
+                ####################################################
+
+                MDCard:
+                    orientation: "vertical"
+                    adaptive_height: True
+                    radius: [24]
+                    elevation: 2
+                    padding: "18dp"
+                    spacing: "12dp"
+                    md_bg_color: 1, 1, 1, 1
+
+                    MDBoxLayout:
+                        size_hint_y: None
+                        height: "30dp"
+                        spacing: "8dp"
+
+                        MDIcon:
+                            icon: "image"
+                            font_size: "20sp"
+                            theme_text_color: "Custom"
+                            text_color: 0.114, 0.404, 0.216, 1
+                            size_hint_x: None
+                            width: "24dp"
+
+                        MDLabel:
+                            id: upload_title
+                            text: "तस्वीर अपलोड गर्नुहोस्"
+                            font_name: "NepaliFont"
+                            halign: "left"
+                            bold: True
+                            font_size: "17sp"
+                            theme_text_color: "Custom"
+                            text_color: 0.145, 0.161, 0.145, 1
+
+                    MDFillRoundFlatButton:
+                        id: gallery_button
+                        text: "ग्यालरीबाट छान्नुहोस्"
+                        font_name: "NepaliFont"
+                        md_bg_color: 0.867, 0.929, 0.847, 1
+                        text_color: 0.114, 0.404, 0.216, 1
+                        elevation: 0
+                        size_hint_x: 1
+                        on_release: root.upload_image()
+
+                ####################################################
+                ## RESULT (Prediction Result Card)
+                ####################################################
+
+                MDCard:
+                    id: result_card
+                    orientation: "vertical"
+                    adaptive_height: True
+                    radius: [24]
+                    elevation: 3
+                    padding: "20dp"
+                    spacing: "12dp"
+                    md_bg_color: 1, 1, 1, 1
+
+                    MDBoxLayout:
+                        size_hint_y: None
+                        height: "26dp"
+                        spacing: "8dp"
+
+                        MDIcon:
+                            icon: "magnify"
+                            font_size: "20sp"
+                            theme_text_color: "Custom"
+                            text_color: 0.114, 0.404, 0.216, 1
+                            size_hint_x: None
+                            width: "24dp"
+
+                        MDLabel:
+                            id: result_heading
+                            text: "पहिचान परिणाम"
+                            font_name: "NepaliFont"
+                            bold: True
+                            halign: "left"
+                            font_size: "16sp"
+                            theme_text_color: "Custom"
+                            text_color: 0.145, 0.161, 0.145, 1
+
+                        Widget:
+
+                        MDIconButton:
+                            icon: "volume-high"
+                            theme_text_color: "Custom"
+                            text_color: 0.114, 0.404, 0.216, 1
+                            icon_size: "20sp"
+                            pos_hint: {"center_y": .5}
+                            on_release: root.read_result_aloud()
+
+                    MDSeparator:
+                        color: 0.9, 0.92, 0.89, 1
+
+                    MDLabel:
+                        id: result_title
+                        text: "अहिलेसम्म कुनै तस्बिर विश्लेषण गरिएको छैन।"
+                        font_name: "NepaliFont"
+                        halign: "center"
+                        bold: True
+                        font_size: "17sp"
+                        text_size: self.width, None
+                        adaptive_height: True
+                        theme_text_color: "Custom"
+                        text_color: 0.145, 0.161, 0.145, 1
+
+                    MDLabel:
+                        id: result_confidence
+                        text: ""
+                        font_name: "NepaliFont"
+                        halign: "center"
+                        text_size: self.width, None
+                        adaptive_height: True
+                        theme_text_color: "Custom"
+                        text_color: 0.804, 0.522, 0.247, 1
+                        font_size: "14sp"
+
+                    MDCard:
+                        orientation: "vertical"
+                        adaptive_height: True
+                        radius: [16]
+                        elevation: 0
+                        padding: "14dp"
+                        spacing: "6dp"
+                        md_bg_color: 0.965, 0.973, 0.949, 1
+
+                        MDBoxLayout:
+                            size_hint_y: None
+                            height: "22dp"
+                            spacing: "6dp"
+
+                            MDIcon:
+                                icon: "leaf"
+                                font_size: "17sp"
+                                theme_text_color: "Custom"
+                                text_color: 0.114, 0.404, 0.216, 1
+                                size_hint_x: None
+                                width: "20dp"
+
+                            MDLabel:
+                                id: treatment_heading
+                                text: "उपचार / सिफारिस"
+                                font_name: "NepaliFont"
+                                bold: True
+                                halign: "left"
+                                theme_text_color: "Custom"
+                                text_color: 0.114, 0.404, 0.216, 1
+                                font_size: "14sp"
+
+                        MDLabel:
+                            id: result_treatment
+                            markup: True
+                            text: ""
+                            font_name: "NepaliFont"
+                            halign: "left"
+                            text_size: self.width, None
+                            adaptive_height: True
+                            theme_text_color: "Custom"
+                            text_color: 0.29, 0.32, 0.29, 1
+                            font_size: "14sp"
+
+                Widget:
+                    size_hint_y: None
+                    height: "12dp"

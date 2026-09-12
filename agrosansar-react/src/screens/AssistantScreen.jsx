@@ -4,6 +4,7 @@ import { HelpCircle, Volume2, VolumeX, Mic, MicOff, Send, Sparkles, AlertCircle,
 import Fuse from 'fuse.js';
 import qaData from '../data/qa_data.json';
 import { speechService, ttsService } from '../services/speechService';
+import { TfidfEngine } from '../services/nlpService';
 
 const UI_TEXT = {
   ne: {
@@ -67,10 +68,17 @@ export default function AssistantScreen({ language, onToggleLanguage, onBack }) 
       .trim();
   };
 
-  // Initialize Fuzzy Search Index with Fuse.js
+  // Initialize Level 1 Statistical NLP (TF-IDF Engine) + Fuzzy Search
+  const tfidfRef = useRef(null);
   const fuseRef = useRef(null);
+
   useEffect(() => {
     const rawList = qaData[language] || [];
+
+    // 1. Initialize TF-IDF Vector Space Model
+    tfidfRef.current = new TfidfEngine(rawList, language);
+
+    // 2. Initialize Fuse.js for typographical character edit tolerance
     const indexedList = rawList.map((item) => ({
       ...item,
       normalizedQuestion: normalize(item.question),
@@ -79,25 +87,34 @@ export default function AssistantScreen({ language, onToggleLanguage, onBack }) 
     fuseRef.current = new Fuse(indexedList, {
       keys: ['normalizedQuestion', 'question'],
       includeScore: true,
-      threshold: 0.58, // Flexible matching for phrased speech
+      threshold: 0.58,
       ignoreLocation: true,
       minMatchCharLength: 2,
     });
   }, [language]);
 
-  // Answer matching query
+  // Answer matching query using Statistical NLP (TF-IDF + Cosine Similarity)
   const findAnswer = (query) => {
-    if (!query || !fuseRef.current) return;
+    if (!query) return;
     const cleanDisplay = query.replace('•', '').trim();
     setQuestion(cleanDisplay);
 
-    const normalizedQuery = normalize(cleanDisplay);
-    const results = fuseRef.current.search(normalizedQuery);
-    
     let matchedAnswer = t.fallback;
-    if (results && results.length > 0 && results[0].score <= 0.60) {
-      matchedAnswer = results[0].item.answer;
+
+    // 1. PRIMARY: Statistical NLP Vector Space Model (TF-IDF Cosine Similarity)
+    const nlpResults = tfidfRef.current ? tfidfRef.current.search(cleanDisplay, 3) : [];
+
+    if (nlpResults.length > 0 && nlpResults[0].score >= 0.35) {
+      matchedAnswer = nlpResults[0].item.answer;
+    } else if (fuseRef.current) {
+      // 2. SECONDARY FALLBACK: Fuzzy string matching for speech typo resilience
+      const normalizedQuery = normalize(cleanDisplay);
+      const fuseResults = fuseRef.current.search(normalizedQuery);
+      if (fuseResults && fuseResults.length > 0 && fuseResults[0].score <= 0.60) {
+        matchedAnswer = fuseResults[0].item.answer;
+      }
     }
+
     setAnswer(matchedAnswer);
     speakText(matchedAnswer);
   };

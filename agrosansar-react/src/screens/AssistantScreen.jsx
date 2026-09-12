@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import { HelpCircle, Volume2, VolumeX, Mic, MicOff, Send, Sparkles, AlertCircle, RefreshCw } from 'lucide-react';
 import Fuse from 'fuse.js';
 import qaData from '../data/qa_data.json';
-import { speechService } from '../services/speechService';
+import { speechService, ttsService } from '../services/speechService';
 
 const UI_TEXT = {
   ne: {
@@ -82,54 +82,26 @@ export default function AssistantScreen({ language, onToggleLanguage, onBack }) 
     speakText(matchedAnswer);
   };
 
-  // Text-To-Speech (Web Speech API + Google TTS audio fallback)
-  const speakText = (text) => {
-    stopSpeaking();
+  // Text-To-Speech (Native Android TTS + Browser Web Speech + Audio stream fallback)
+  const speakText = async (text) => {
     if (!text || text === t.fallback) return;
-
-    // Check if native Web Speech Synthesis is available
-    if ('speechSynthesis' in window) {
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = language === 'ne' ? 'ne-NP' : 'en-US';
-      utterance.rate = 0.95;
-      utterance.onstart = () => setIsSpeaking(true);
-      utterance.onend = () => setIsSpeaking(false);
-      utterance.onerror = () => {
-        setIsSpeaking(false);
-        fallbackGoogleTTS(text);
-      };
-      window.speechSynthesis.speak(utterance);
-    } else {
-      fallbackGoogleTTS(text);
-    }
-  };
-
-  const fallbackGoogleTTS = (text) => {
     try {
-      const tl = language === 'ne' ? 'ne' : 'en';
-      const url = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(text.slice(0, 150))}&tl=${tl}&client=tw-ob`;
-      if (audioRef.current) {
-        audioRef.current.pause();
-      }
-      const audio = new Audio(url);
-      audioRef.current = audio;
-      audio.onplay = () => setIsSpeaking(true);
-      audio.onended = () => setIsSpeaking(false);
-      audio.onerror = () => setIsSpeaking(false);
-      audio.play();
+      await ttsService.speak(
+        text,
+        language,
+        () => setIsSpeaking(true),
+        () => setIsSpeaking(false)
+      );
     } catch (e) {
-      console.warn('TTS Audio error:', e);
+      console.warn('speakText error:', e);
       setIsSpeaking(false);
     }
   };
 
-  const stopSpeaking = () => {
-    if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-    }
-    if (audioRef.current) {
-      audioRef.current.pause();
-    }
+  const stopSpeaking = async () => {
+    try {
+      await ttsService.stop();
+    } catch (e) {}
     setIsSpeaking(false);
   };
 

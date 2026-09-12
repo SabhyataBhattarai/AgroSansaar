@@ -1,5 +1,6 @@
 import { Capacitor } from '@capacitor/core';
 import { SpeechRecognition as CapSpeechRecognition } from '@capacitor-community/speech-recognition';
+import { TextToSpeech } from '@capacitor-community/text-to-speech';
 
 /**
  * Cross-platform Speech Recognition & Microphone Permission Service
@@ -16,15 +17,22 @@ export const speechService = {
   async requestPermission() {
     if (this.isNative) {
       try {
-        const has = await CapSpeechRecognition.hasPermissions();
-        if (!has.permission) {
-          const res = await CapSpeechRecognition.requestPermissions();
-          return !!res.permission;
+        const check = await CapSpeechRecognition.checkPermissions();
+        if (check && check.speechRecognition !== 'granted') {
+          const req = await CapSpeechRecognition.requestPermissions();
+          return req && req.speechRecognition === 'granted';
         }
         return true;
       } catch (e) {
         console.warn('Native permission check failed:', e);
-        return false;
+        // Try requesting directly if check fails
+        try {
+          const req = await CapSpeechRecognition.requestPermissions();
+          return req && req.speechRecognition === 'granted';
+        } catch (err) {
+          console.error('Direct requestPermissions failed:', err);
+          return false;
+        }
       }
     } else {
       // Browser environment
@@ -35,7 +43,6 @@ export const speechService = {
       if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
         try {
           const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-          // Stop stream tracks immediately once permission is verified
           stream.getTracks().forEach((track) => track.stop());
           return true;
         } catch (err) {
@@ -57,32 +64,30 @@ export const speechService = {
 
     if (this.isNative) {
       try {
-        const perm = await this.requestPermission();
-        if (!perm) {
+        const permGranted = await this.requestPermission();
+        if (!permGranted) {
           onError && onError('PERMISSION_DENIED');
           return;
         }
 
-        const available = await CapSpeechRecognition.available();
-        if (!available.available) {
-          onError && onError('NOT_AVAILABLE');
-          return;
+        try {
+          const available = await CapSpeechRecognition.available();
+          if (!available.available) {
+            console.warn('Recognition not marked available, attempting start anyway...');
+          }
+        } catch (e) {
+          console.warn('Available check error:', e);
         }
 
         onStart && onStart();
 
-        CapSpeechRecognition.addListener('partialResults', (data) => {
-          if (data && data.matches && data.matches.length > 0) {
-            onResult && onResult(data.matches[0]);
-          }
-        });
-
+        // Native Android speech recognition with native popup
         const result = await CapSpeechRecognition.start({
           language: langCode,
-          maxResults: 2,
-          prompt: language === 'ne' ? 'बोल्नुहोस्...' : 'Speak now...',
+          maxResults: 3,
+          prompt: language === 'ne' ? 'तपाईंको कृषि प्रश्न सोध्नुहोस्...' : 'Ask your farming question...',
           partialResults: false,
-          popup: false,
+          popup: true,
         });
 
         if (result && result.matches && result.matches.length > 0) {
@@ -91,7 +96,12 @@ export const speechService = {
         onEnd && onEnd();
       } catch (err) {
         console.error('Native speech error:', err);
-        onError && onError(err.message || 'NATIVE_ERROR');
+        const msg = String(err && err.message ? err.message : err);
+        if (msg.toLowerCase().includes('permission') || msg.toLowerCase().includes('denied')) {
+          onError && onError('PERMISSION_DENIED');
+        } else {
+          onError && onError(msg || 'NATIVE_ERROR');
+        }
         onEnd && onEnd();
       }
     } else {
@@ -104,7 +114,6 @@ export const speechService = {
       }
 
       try {
-        // Explicitly trigger browser permission prompt if needed
         await this.requestPermission();
       } catch (permErr) {
         if (permErr.message === 'SECURE_ORIGIN_REQUIRED') {
@@ -174,6 +183,104 @@ export const speechService = {
       } catch (e) {
         console.warn('Web speech stop error:', e);
       }
+    }
+  }
+};
+
+/**
+ * Cross-platform Text-To-Speech (Native Android TextToSpeech + Browser Web Speech + Google TTS Stream fallback)
+ */
+export const ttsService = {
+  isNative: Capacitor.isNativePlatform(),
+  currentAudio: null,
+
+  async speak(text, language = 'ne', onStart, onEnd) {
+    await this.stop();
+    if (!text) return;
+
+    const langCode = language === 'ne' ? 'ne-NP' : 'en-US';
+
+    // 1. Native Capacitor TTS (Uses Android's native TextToSpeech engine)
+    if (this.isNative) {
+      try {
+        onStart && onStart();
+        await TextToSpeech.speak({
+          text,
+          lang: langCode,
+          rate: 0.95,
+          pitch: 1.0,
+          volume: 1.0,
+          category: 'playback',
+        });
+        onEnd && onEnd();
+        return;
+      } catch (err) {
+        console.warn('Native TextToSpeech failed, falling back to audio stream:', err);
+      }
+    }
+
+    // 2. Web Speech Synthesis (Browser)
+    if ('speechSynthesis' in window && !this.isNative) {
+      try {
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = langCode;
+        utterance.rate = 0.95;
+        utterance.onstart = () => onStart && onStart();
+        utterance.onend = () => onEnd && onEnd();
+        utterance.onerror = () => {
+          this.fallbackAudioStream(text, language, onStart, onEnd);
+        };
+        window.speechSynthesis.speak(utterance);
+        return;
+      } catch (e) {
+        console.warn('speechSynthesis failed, falling back to stream:', e);
+      }
+    }
+
+    // 3. Audio Stream Fallback (Works everywhere with internet access)
+    this.fallbackAudioStream(text, language, onStart, onEnd);
+  },
+
+  fallbackAudioStream(text, language, onStart, onEnd) {
+    try {
+      const tl = language === 'ne' ? 'ne' : 'en';
+      const cleanText = text.replace(/[•\n]/g, ' ').slice(0, 150);
+      const url = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(cleanText)}&tl=${tl}&client=tw-ob`;
+      
+      const audio = new Audio(url);
+      this.currentAudio = audio;
+      audio.onplay = () => onStart && onStart();
+      audio.onended = () => {
+        this.currentAudio = null;
+        onEnd && onEnd();
+      };
+      audio.onerror = (e) => {
+        console.warn('Audio stream playback failed:', e);
+        this.currentAudio = null;
+        onEnd && onEnd();
+      };
+      audio.play().catch((err) => {
+        console.warn('audio.play() error:', err);
+        onEnd && onEnd();
+      });
+    } catch (err) {
+      console.warn('Audio stream error:', err);
+      onEnd && onEnd();
+    }
+  },
+
+  async stop() {
+    if (this.isNative) {
+      try {
+        await TextToSpeech.stop();
+      } catch (e) {}
+    }
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+    }
+    if (this.currentAudio) {
+      this.currentAudio.pause();
+      this.currentAudio = null;
     }
   }
 };

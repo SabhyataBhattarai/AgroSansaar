@@ -1,10 +1,14 @@
 import os
+import sys
+import subprocess
+import atexit
+
 gtk_bin = r"C:\Program Files\GTK3-Runtime Win64\bin"
 if os.path.exists(gtk_bin):
     os.add_dll_directory(gtk_bin)
     os.environ['PATH'] = gtk_bin + os.path.pathsep + os.environ.get('PATH', '')
 
-# 2. Tell Kivy to use Pillow ('pil'), which uses HarfBuzz/Raqm from GTK for Devanagari
+# Tell Kivy to use Pillow ('pil'), which uses HarfBuzz/Raqm from GTK for Devanagari
 os.environ['KIVY_TEXT'] = 'pil'
 
 import threading

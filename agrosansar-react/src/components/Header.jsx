@@ -13,8 +13,15 @@ export default function Header({
     <header className="flex items-center justify-between px-4 py-3 bg-[#F6F8F2] sticky top-0 z-30">
       <div className="flex items-center space-x-3 flex-1">
         {isHome ? (
-          <div className="w-12 h-12 rounded-full bg-[#1D6737] flex items-center justify-center shadow-sm">
-            <Sprout className="w-7 h-7 text-white" />
+          <div className="w-12 h-12 rounded-full shadow-sm flex items-center justify-center overflow-hidden border border-emerald-950/10 bg-white">
+            <img 
+              src="/icons/icon-192.png" 
+              alt="AgroSansar Logo" 
+              className="w-full h-full object-cover"
+              onError={(e) => {
+                e.currentTarget.style.display = 'none';
+              }}
+            />
           </div>
         ) : (
           <button

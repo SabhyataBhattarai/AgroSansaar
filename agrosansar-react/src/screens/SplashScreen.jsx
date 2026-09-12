@@ -11,8 +11,15 @@ export default function SplashScreen({ onFinish, language }) {
 
   return (
     <div className="fixed inset-0 bg-[#1D6737] flex flex-col items-center justify-center p-6 text-white select-none z-50 animate-fadeIn">
-      <div className="w-24 h-24 rounded-3xl bg-white/10 backdrop-blur-md flex items-center justify-center shadow-2xl mb-6 ring-8 ring-white/5">
-        <Sprout className="w-14 h-14 text-white animate-pulse" />
+      <div className="w-24 h-24 rounded-3xl bg-white/10 backdrop-blur-md flex items-center justify-center shadow-2xl mb-6 ring-8 ring-white/5 overflow-hidden">
+        <img 
+          src="/icons/icon-192.png" 
+          alt="AgroSansar Logo" 
+          className="w-full h-full object-cover rounded-3xl animate-pulse" 
+          onError={(e) => {
+            e.currentTarget.style.display = 'none';
+          }}
+        />
       </div>
 
       <h1 className="text-3xl font-extrabold tracking-tight mb-2">

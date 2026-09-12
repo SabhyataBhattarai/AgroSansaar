@@ -27,6 +27,12 @@ assets/ggml-tiny.bin
 # OS specific files
 .DS_Store
 Thumbs.db
-*.swp
-*~
 .env
+
+# React & Capacitor
+agrosansar-react/node_modules/
+agrosansar-react/dist/
+agrosansar-react/android/.gradle/
+agrosansar-react/android/build/
+agrosansar-react/android/app/build/
+agrosansar-react/android/capacitor-cordova-android-plugins/build/

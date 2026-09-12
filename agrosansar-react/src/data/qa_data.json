@@ -1,0 +1,726 @@
+{
+  "en": [
+    {
+      "question": "What is fertilizer?",
+      "answer": "Fertilizer is a substance added to the soil or plants to provide essential nutrients such as nitrogen, phosphorus, and potassium (NPK). It helps crops grow healthier, stronger, and produce higher yields."
+    },
+    {
+      "question": "Which fertilizer is best for tomato plants?",
+      "answer": "Tomatoes need balanced NPK along with organic compost. Apply well-decomposed farmyard manure (2–3 kg/plant) and DAP before planting, followed by split applications of Urea for vegetative growth and Potash for fruit development."
+    },
+    {
+      "question": "What fertilizer should I use for tomatoes?",
+      "answer": "Tomatoes need balanced NPK along with organic compost. Apply well-decomposed farmyard manure (2–3 kg/plant) and DAP before planting, followed by split applications of Urea for vegetative growth and Potash for fruit development."
+    },
+    {
+      "question": "What fertilizer should I use during flowering and fruiting?",
+      "answer": "During flowering and fruit set, avoid excess nitrogen which causes all foliage and no fruit. Supply Potassium (MOP or Sulfate of Potash), Phosphorus, and a foliar spray of Boron (1 g/L) to prevent flower drop and ensure big, firm fruits."
+    },
+    {
+      "question": "How to make organic Jholmol fertilizer?",
+      "answer": "Jholmol is made by fermenting cow dung, cow urine, water, and local medicinal plants (Titepati, Asuro, Neem, Khirro) in a covered drum for 21 days. Dilute 1:4 with water for root drenching or 1:8 for foliar spray against pests and for plant vigor."
+    },
+    {
+      "question": "When is the best time to grow tomatoes?",
+      "answer": "In the Terai and inner valleys, plant from September to November (winter crop). In the mid-hills (Kathmandu, Pokhara), plant in spring (Feb–April) for open fields, or year-round (August–October for off-season) under plastic tunnels."
+    },
+    {
+      "question": "Which season is suitable for tomatoes?",
+      "answer": "In the Terai and inner valleys, plant from September to November (winter crop). In the mid-hills (Kathmandu, Pokhara), plant in spring (Feb–April) for open fields, or year-round (August–October for off-season) under plastic tunnels."
+    },
+    {
+      "question": "Why are my tomato leaves turning yellow?",
+      "answer": "Yellow leaves can result from nitrogen deficiency, overwatering, root rot, or fungal blight. If lower leaves turn uniformly yellow, add compost or nitrogen; if soil is waterlogged, reduce watering; if brown spots appear, check for blight."
+    },
+    {
+      "question": "How do I know if my tomato plant has a disease?",
+      "answer": "Common signs include yellowing or spotted leaves, water-soaked dark lesions, white mold, sudden daytime wilting, stunted growth, and rotting or cracked fruits. Early diagnosis prevents spread."
+    },
+    {
+      "question": "What is Early Blight?",
+      "answer": "Early Blight is a fungal disease (Alternaria solani) causing brown leaf spots with concentric target-like rings. Remove infected lower leaves, avoid overhead watering, and spray Mancozeb 75% WP (2–2.5 g/L water) or Chlorothalonil."
+    },
+    {
+      "question": "How do I treat Early Blight in tomatoes?",
+      "answer": "Early Blight is a fungal disease (Alternaria solani) causing brown leaf spots with concentric target-like rings. Remove infected lower leaves, avoid overhead watering, and spray Mancozeb 75% WP (2–2.5 g/L water) or Chlorothalonil."
+    },
+    {
+      "question": "What is Late Blight?",
+      "answer": "Late Blight is a serious water-mold disease (Phytophthora infestans) causing dark, water-soaked lesions and white fungal fuzz during cool, humid weather. Promptly remove severely infected plants and spray systemic fungicides like Metalaxyl + Mancozeb (Krilaxyl/Ridomil @ 2 g/L) or Copper Oxychloride."
+    },
+    {
+      "question": "How to control Late Blight in tomatoes?",
+      "answer": "Late Blight is a serious water-mold disease (Phytophthora infestans) causing dark, water-soaked lesions and white fungal fuzz during cool, humid weather. Promptly remove severely infected plants and spray systemic fungicides like Metalaxyl + Mancozeb (Krilaxyl/Ridomil @ 2 g/L) or Copper Oxychloride."
+    },
+    {
+      "question": "How to control Leaf Miner infestation in tomato?",
+      "answer": "Leaf miners are fly larvae that tunnel inside leaves leaving winding white serpentine trails. Use yellow sticky traps, remove heavily infested leaves, and spray Neem oil (3–5 ml/L) or Abamectin (1 ml/L) during early morning or late afternoon."
+    },
+    {
+      "question": "How to cure Blossom End Rot in tomatoes?",
+      "answer": "Blossom End Rot causes a flat, leathery black patch at the bottom of tomato fruits due to calcium deficiency and irregular watering. Keep soil moisture consistently even with mulching and apply agricultural lime or foliar Calcium Nitrate (2 g/L)."
+    },
+    {
+      "question": "How to control Tomato Fruit Borer?",
+      "answer": "Fruit borer larvae bore into tomato fruits causing rotting and premature fruit drop. Install pheromone traps (Helilure @ 4–5 traps/ropani), spray Bacillus thuringiensis (Bt) or Neem extract, and for severe attacks spray Emamectin Benzoate (0.5 g/L)."
+    },
+    {
+      "question": "How to control Whiteflies on tomato?",
+      "answer": "Whiteflies suck plant sap and transmit Tomato Leaf Curl Virus causing stunted plants and upward curled wrinkled leaves. Use yellow sticky traps, net screens in tunnels, and spray Imidacloprid (0.5 ml/L) or Acetamiprid to control whiteflies."
+    },
+    {
+      "question": "How to control aphids on tomato?",
+      "answer": "Aphids are small sap-sucking green or black insects clustering under young leaves and excreting sticky honeydew. Spray soapy water, Neem oil (5 ml/L), or systemic insecticide like Dimethoate (Rogor) or Imidacloprid if infestation is high."
+    },
+    {
+      "question": "How to control Red Spider Mites on tomato?",
+      "answer": "Red spider mites cause fine yellow stippling on leaves and webbing underneath in dry, warm conditions. Spray wettable sulfur (2 g/L) or specialized miticides like Fenazaquin, and maintain adequate soil moisture and humidity."
+    },
+    {
+      "question": "What causes Bacterial Wilt in tomatoes?",
+      "answer": "Bacterial Wilt (Ralstonia solanacearum) causes sudden daytime wilting and death of green tomato plants without yellowing. Rotate crops with non-solanaceous plants (corn, paddy), ensure raised bed drainage, and remove infected plants immediately."
+    },
+    {
+      "question": "How to prevent Damping-off in nursery seedlings?",
+      "answer": "Damping-off causes nursery seedlings to rot at the soil line and collapse due to fungal pathogens. Treat seeds with Trichoderma (5 g/kg) or Captan/Thiram, avoid excessive moisture, solarize nursery soil, and raise beds."
+    },
+    {
+      "question": "How often should I water tomato plants?",
+      "answer": "Water tomato plants deeply 2 to 3 times per week depending on soil type and heat. During fruiting, provide consistent moisture to avoid fruit cracking. Water the base of the plant in the early morning and avoid wetting foliage."
+    },
+    {
+      "question": "How much water do tomatoes need?",
+      "answer": "Water tomato plants deeply 2 to 3 times per week depending on soil type and heat. During fruiting, provide consistent moisture to avoid fruit cracking. Water the base of the plant in the early morning and avoid wetting foliage."
+    },
+    {
+      "question": "What are the advantages of drip irrigation for tomatoes?",
+      "answer": "Drip irrigation delivers water and soluble fertilizer directly to plant roots, saving 40–60% water, reducing weed growth, keeping foliage dry to prevent fungal blights, and increasing fruit yield by 20–30%."
+    },
+    {
+      "question": "How to raise healthy tomato seedlings in a nursery?",
+      "answer": "Sow seeds in raised nursery beds or plastic seedling trays using a mix of soil, compost, and cocopeat. Maintain warm temperatures, protect from rain with plastic cover, and transplant healthy seedlings when they have 4–5 true leaves (25–30 days old)."
+    },
+    {
+      "question": "What is the correct spacing for planting tomatoes?",
+      "answer": "For determinate (bush) varieties, space plants 45–50 cm apart in rows 60 cm apart. For indeterminate (climbing/trellised) varieties inside tunnels, keep 50–60 cm between plants and 75–90 cm between rows for proper airflow."
+    },
+    {
+      "question": "How and why should I prune tomato suckers?",
+      "answer": "Pinch off 'suckers' (side shoots growing in the leaf axils) when they are 2–4 inches long, leaving 1 or 2 main stems. Pruning improves air circulation, prevents fungal diseases, and directs energy into producing larger fruits."
+    },
+    {
+      "question": "Why is staking and trellising important for tomatoes?",
+      "answer": "Staking with bamboo poles or tying vines to overhead wires with twine keeps foliage and fruits off the moist ground. It prevents soil-borne fungal rots, eases spraying and harvesting, and maximizes sunlight penetration."
+    },
+    {
+      "question": "Why do tomato flowers drop?",
+      "answer": "Flower drop is caused by extreme temperatures (below 10°C or above 32°C), lack of pollination, dry soil, or boron deficiency. Shake plants gently to pollinate, ensure consistent watering, and spray Planofix (alpha NAA) or Boron."
+    },
+    {
+      "question": "Why do tomatoes crack or split?",
+      "answer": "Fruit cracking occurs when heavy rain or sudden watering follows a dry spell, causing the inside pulp to expand faster than the skin. Prevent cracking with organic mulching, steady drip irrigation, and picking fruits at the breaker stage."
+    },
+    {
+      "question": "How to protect tomatoes from frost and cold in winter?",
+      "answer": "Protect winter tomatoes from frost by growing inside UV-stabilized plastic tunnels, covering beds with agro-netting on freezing nights, giving light evening irrigation, and spraying anti-stress potassium silicate."
+    },
+    {
+      "question": "How long should I wait after spraying pesticides before harvest?",
+      "answer": "The Pre-Harvest Interval (PHI) depends on the pesticide: biologicals and Neem oil need 1–2 days; contact fungicides like Mancozeb need 7–10 days; systemic pesticides need 14–21 days. Always wash harvested fruits thoroughly."
+    },
+    {
+      "question": "What is Powdery Mildew and how to treat it?",
+      "answer": "Powdery Mildew appears as a white talcum-powder-like dusting on tomato leaves causing yellowing and drying. Treat by spraying Wettable Sulfur (2 g/L), baking soda solution with a drop of liquid soap, or Hexaconazole."
+    },
+    {
+      "question": "What is Septoria Leaf Spot and how to control it?",
+      "answer": "Septoria Leaf Spot causes numerous small, circular spots with dark brown margins and gray centers on lower foliage. Prune affected bottom leaves, maintain ground mulch, and spray Copper Oxychloride or Mancozeb."
+    },
+    {
+      "question": "What is the ideal soil and pH for tomato farming?",
+      "answer": "Tomatoes thrive in deep, well-drained sandy loam soil rich in organic matter with a pH between 6.0 and 6.8. If soil is too acidic (pH < 5.5), apply agricultural lime (Chun) 2 to 3 weeks before planting."
+    },
+    {
+      "question": "How to manage weeds in tomato fields?",
+      "answer": "Manage weeds using silver-black plastic mulch which also warms soil and repels pests, or straw mulch. Perform shallow hoeing 2–3 weeks after transplanting to avoid damaging root systems."
+    },
+    {
+      "question": "When is the right time to harvest tomatoes?",
+      "answer": "For local consumption, pick tomatoes when they are firm and mature pink to red. For long-distance transport, harvest at the 'breaker stage' when the blossom end just starts turning from green to pink or light yellow."
+    },
+    {
+      "question": "How to grow off-season tomatoes in plastic tunnels?",
+      "answer": "Plastic tunnels protect tomatoes from heavy monsoon rains, excessive cold, and insect pests. Use indeterminate hybrid varieties, maintain 1.5–2 meter height, prune regularly, and ensure cross-ventilation on sunny days."
+    },
+    {
+      "question": "What causes sunscald on tomato fruits?",
+      "answer": "Sunscald appears as shiny white or light tan blistered patches on green or ripening fruit exposed directly to hot midday sun. Maintain adequate leaf canopy, avoid over-pruning, and use 30% shade netting during peak summer heat."
+    },
+    {
+      "question": "How to store harvested tomatoes to increase shelf life?",
+      "answer": "Store mature green or breaker-stage tomatoes at 12–15°C with good air circulation. Never store unripe tomatoes in a cold refrigerator (<10°C) as it destroys flavor and texture; keep ripe fruit in a cool, ventilated room."
+    },
+    {
+      "question": "How to prepare Bordeaux mixture fungicide?",
+      "answer": "Bordeaux mixture is made by dissolving 100g Copper Sulfate and 100g unslaked Lime in 10 liters of water (1:1:100 ratio) in plastic containers. Test neutrality with an iron nail, and spray freshly prepared mixture against blights and rots."
+    },
+    {
+      "question": "How to use Trichoderma bio-fungicide?",
+      "answer": "Trichoderma is a beneficial fungus that feeds on harmful soil-borne pathogens. Mix 1 kg Trichoderma with 100 kg compost/FYM, keep moist under shade for 7 days, and apply to nursery beds or transplant pits."
+    },
+    {
+      "question": "How to make botanical pesticide from local herbs?",
+      "answer": "Grind local bitter/pungent leaves (Titepati, Asuro, Bakaino, Neem, Chili, Garlic) and boil or ferment in water/cow urine for 10-15 days. Filter and dilute 1:5 with water, adding a pinch of soap as a natural spreader against sucking pests."
+    },
+    {
+      "question": "How to test soil pH and fertility in Nepal?",
+      "answer": "Collect V-shaped soil samples from 10-15 spots in your field at 15 cm depth, mix thoroughly, dry in shade, and take 500g to your local Agriculture Knowledge Center (AKC) or use a digital soil pH test kit."
+    },
+    {
+      "question": "How to make vermicompost (earthworm manure)?",
+      "answer": "Prepare a shaded brick tank or pit (1m deep), layer with crop residue and half-decomposed cattle manure, introduce Eisenia fetida red earthworms, keep moist (60-70%), and collect dark granular castings after 45-60 days."
+    },
+    {
+      "question": "What are the signs of Magnesium and Zinc deficiency?",
+      "answer": "Magnesium deficiency causes yellowing between leaf veins on older lower leaves while veins stay green (interveinal chlorosis). Zinc deficiency causes small clustered leaves (little leaf) and stunted plant tips. Spray Epsom salt (Mg) or Zinc sulfate."
+    },
+    {
+      "question": "What is Green Manure and how to use it?",
+      "answer": "Green manuring involves growing fast-growing leguminous crops like Dhaincha (Sesbania) or Sunnhemp and plowing them into the soil at flowering stage (45-50 days). It adds 20-30 kg nitrogen per hectare and enriches soil organic matter."
+    },
+    {
+      "question": "How to control Late Blight in Potato?",
+      "answer": "Potato Late Blight attacks foliage and tubers during cold fog and rain. Spray Mancozeb (2.5 g/L) prophylactically before disease onset. Upon spotting water-soaked spots, spray Metalaxyl + Mancozeb (2 g/L) and hill up soil around tubers."
+    },
+    {
+      "question": "How to control leaf curl and fruit rot in Chili?",
+      "answer": "Chili leaf curl is spread by thrips and mites. Spray Imidacloprid (0.5 ml/L) or Fenazaquin. For fruit rot/dieback (Anthracnose), remove rotting chilies and spray Copper Oxychloride (2.5 g/L) or Azoxystrobin."
+    },
+    {
+      "question": "How to control fruit flies in cucumber and gourds?",
+      "answer": "Fruit flies lay eggs inside tender cucurbit fruits causing worm infestation and rotting. Install Cue-lure pheromone traps (Phero-traps @ 4/ropani), hang protein bait sprays, and bag young fruits with paper covers."
+    },
+    {
+      "question": "How to manage Clubroot disease in Cauliflower and Cabbage?",
+      "answer": "Clubroot (Plasmodiophora) causes swollen club-like root galls and daytime wilting in acidic soils. Raise soil pH above 7.0 by applying agricultural lime (Chun @ 50 kg/ropani) 3 weeks before planting and avoid planting brassicas in infected fields."
+    },
+    {
+      "question": "How to control Diamondback Moth (DBM) in cabbage and cauliflower?",
+      "answer": "DBM caterpillars chew holes in cabbage and cauliflower heads. Install yellow/pheromone traps, intercrop with mustard as a trap crop, and spray biological Bacillus thuringiensis (Bt) or Spinosad (0.5 ml/L)."
+    },
+    {
+      "question": "How to control Purple Blotch in Onion and Garlic?",
+      "answer": "Purple Blotch causes sunken oval purple spots on onion/garlic leaves. Avoid overhead sprinkling, ensure good field drainage, and spray Mancozeb or Difenoconazole (1 ml/L) mixed with a sticker."
+    },
+    {
+      "question": "What is Integrated Pest Management (IPM)?",
+      "answer": "IPM is an eco-friendly crop protection approach combining cultural methods (crop rotation, clean weeding), mechanical methods (sticky/pheromone traps), biological controls (beneficial insects, Trichoderma), and using chemicals only as a last resort."
+    },
+    {
+      "question": "How do yellow and blue sticky traps work?",
+      "answer": "Yellow sticky traps attract and trap sap-sucking whiteflies, winged aphids, and leaf miners. Blue sticky traps attract thrips. Hang traps 15-20 cm above the plant canopy at 10-15 traps per ropani."
+    },
+    {
+      "question": "How do pheromone traps work in vegetable farming?",
+      "answer": "Pheromone traps use species-specific female sex pheromones to attract and trap male moths (such as Helicoverpa fruit borer or Tuta leafminer). Trapping males breaks the mating cycle and drastically reduces caterpillar damage."
+    },
+    {
+      "question": "What is plastic mulching and what are its benefits?",
+      "answer": "Silver-black plastic mulch covers planting beds to suppress weed growth, conserve soil moisture, warm the root zone for early harvest, reflect sunlight to repel aphids, and prevent soil-borne pathogens from splashing onto leaves."
+    },
+    {
+      "question": "How to manage temperature and ventilation in plastic tunnels?",
+      "answer": "Open tunnel side vents early in the morning on sunny days to vent humidity and hot air (ideal temp: 22–28°C). Close vents before sunset in winter to trap daytime heat and prevent nighttime frost damage."
+    },
+    {
+      "question": "How to protect vegetable crops from hailstorms?",
+      "answer": "Install nylon anti-hail nets (30-40 mesh) over nursery beds and open vegetable rows supported on bamboo or GI pipe frames. Anti-hail nets absorb impact force, protecting tender foliage and ripening fruits from tearing."
+    },
+    {
+      "question": "What is rainwater harvesting for greenhouse farming?",
+      "answer": "Collect rainwater runoff from polytunnel roofs using PVC gutters connected to a silpaulin plastic-lined recharge pond. A 100 sq meter tunnel roof can harvest over 80,000 liters of clean, mineral-rich irrigation water during monsoon."
+    },
+    {
+      "question": "How to apply for agricultural crop insurance in Nepal?",
+      "answer": "Nepal government subsidizes 80% of crop insurance premiums. Farmers can visit local non-life insurance agents, cooperative offices, or the local ward agriculture officer with land ownership certificate (Lalpurja) and citizenship."
+    },
+    {
+      "question": "Where can farmers get soil testing and technical advice in Nepal?",
+      "answer": "Free or low-cost soil testing and agricultural advice are available at local Municipality Agriculture Sections, District Agriculture Knowledge Centers (AKC), and Regional Soil Testing Laboratories across all provinces."
+    },
+    {
+      "question": "How to grade and package vegetables for market?",
+      "answer": "Sort harvested vegetables into Grade A (uniform size, zero blemishes), Grade B, and Grade C. Pack in well-ventilated plastic crates rather than tight nylon sacks to prevent bruising, heat buildup, and transport rotting."
+    },
+    {
+      "question": "What safety precautions should be taken when spraying pesticides?",
+      "answer": "Always wear protective mask, gloves, long sleeves, and boots. Never spray against the wind direction or during hot midday sun. Do not eat, drink, or smoke while handling chemicals, and bathe thoroughly after spraying."
+    },
+    {
+      "question": "How to safely clean and dispose of empty pesticide containers?",
+      "answer": "Triple-rinse empty pesticide bottles with water, pouring the rinse water back into the spray tank. Puncture the container so it cannot be reused, and dispose of it in a designated hazardous waste pit away from water sources."
+    },
+    {
+      "question": "Why do tomato leaves curl upward without insect pests?",
+      "answer": "Physiological leaf curl is a natural defense reaction to high temperatures, intense sunlight, dry winds, or heavy pruning. If leaves are curled but green and healthy without yellowing or stunting, it does not harm yields."
+    },
+    {
+      "question": "Can fresh animal manure be applied directly to vegetable fields?",
+      "answer": "Never apply fresh unrotted manure directly to crops. Fresh manure produces high ammonia that burns roots, carries weed seeds and pathogens (E. coli, fungal spores), and robs nitrogen from the soil during decomposition."
+    },
+    {
+      "question": "How does raw cow milk spray protect vegetables from viruses?",
+      "answer": "Spray a 1:9 mixture of fresh raw cow milk and water on foliage. The milk proteins coat leaves, deactivating plant viruses and creating a natural protective barrier against powdery mildew fungal spores."
+    },
+    {
+      "question": "What is crop rotation and why is it essential?",
+      "answer": "Crop rotation means never planting crops from the same family (like tomato, potato, chili, eggplant) in the same field consecutively. Rotating with legumes, corn, or brassicas starves soil-borne diseases and restores balanced soil nutrients."
+    },
+    {
+      "question": "How to control Cutworms (Phed katne kira)?",
+      "answer": "Cutworms hide in the soil during the day and sever young seedling stems at night. Flood fields before planting to expose larvae to birds, use light traps, and drench the base of seedlings with Chlorpyrifos or Neem cake."
+    },
+    {
+      "question": "How to control Termites (Uiya) in farming soil?",
+      "answer": "Termites attack plant roots in dry sandy soils. Incorporate well-rotted manure (never unrotted wood/straw), apply Neem cake (20-30 kg/ropani) during land preparation, and drench affected root zones with Chlorpyrifos."
+    },
+    {
+      "question": "What is the difference between contact and systemic fungicides?",
+      "answer": "Contact fungicides (like Mancozeb, Copper) remain on the leaf surface as a protective barrier and must be applied before infection. Systemic fungicides (like Metalaxyl, Hexaconazole) are absorbed into plant sap to cure internal infections."
+    },
+    {
+      "question": "How to prevent root-knot nematodes in vegetables?",
+      "answer": "Root-knot nematodes (Meloidogyne) cause root swellings and stunted yellow plants. Intercrop with French Marigolds (Sayapatri), solarize soil with clear plastic in May-June, and apply Paecilomyces lilacinus bio-nematicide."
+    },
+    {
+      "question": "How to properly calibrate a knapsack sprayer pump?",
+      "answer": "Fill sprayer with clean water, spray a 10x10 meter plot at normal walking speed, measure water used, and calculate exact water volume needed per ropani. This ensures pesticides are never applied too weak (ineffective) or too concentrated (leaf burn)."
+    },
+    {
+      "question": "How to control Fall Armyworm in Maize?",
+      "answer": "Fall Armyworm larvae devastate maize whorls and leaves. Inspect crop early, apply sand or wood ash mixed with chili in whorls, release Trichogramma egg parasitoids, and spray Spinetoram (0.5 ml/L) or Emamectin Benzoate (0.4 g/L)."
+    },
+    {
+      "question": "How to control Stem Borer and Blast in Rice?",
+      "answer": "Rice Stem Borer larvae cause dead hearts and white heads; install light traps and apply Cartap Hydrochloride. For Rice Blast fungus causing spindle-shaped lesions, spray Tricyclazole 75% WP (1 g/L) or Kasugamycin."
+    },
+    {
+      "question": "How to manage Rhizome Rot in Ginger?",
+      "answer": "Ginger Rhizome Rot is caused by Pythium fungus and waterlogging. Ensure raised drainage beds, treat seed rhizomes with Mancozeb (3 g/L) before planting, solarize soil, and drench affected beds with Metalaxyl or Trichoderma."
+    },
+    {
+      "question": "How to prevent Fruit Drop in Orange and Citrus?",
+      "answer": "Premature fruit drop in citrus occurs due to fruit fly, fungal stylar rot, or micronutrient deficiency. Spray Zinc Sulfate + Boron at flower initiation, install methyl eugenol fruit fly traps, and spray Carbendazim (1 g/L)."
+    },
+    {
+      "question": "How to control Thrips in Onion and Garlic?",
+      "answer": "Thrips are tiny slender insects rasping leaves and leaving silvery patches with black specks. Spray Neem-based azadirachtin (3 ml/L), blue sticky traps, or Fipronil (1.5 ml/L) during early morning hours."
+    },
+    {
+      "question": "How to control Tuta Absoluta leafminer in tomatoes?",
+      "answer": "Tuta Absoluta caterpillars mine leaf mesophyll and drill holes in tomato fruits. Use blacklight and Tuta-specific pheromone traps, maintain fine mesh netting in tunnels, and spray Chlorantraniliprole (Coragen @ 0.3 ml/L)."
+    },
+    {
+      "question": "How to manage Chirke and Furkey disease in Large Cardamom?",
+      "answer": "Chirke and Furkey are viral diseases spread by aphids. Immediately uproot and burn infected cardamom clumps, plant disease-free tissue-cultured suckers, and control aphid vectors using Dimethoate or soapy spray."
+    },
+    {
+      "question": "How to prepare Jeevamrit organic liquid fertilizer?",
+      "answer": "Mix 10 kg cow dung, 10 L cow urine, 2 kg jaggery (Gud), 2 kg pulse flour (Besan), and a handful of fertile virgin soil in 200 L water. Stir twice daily for 5-7 days. Apply 200 L/acre directly to soil as a powerful microbial tonic."
+    },
+    {
+      "question": "How to control Mustard Aphid in oilseed crops?",
+      "answer": "Mustard aphids multiply rapidly during cloudy winter weather. Sow mustard early (by mid-October) to escape attack, conserve ladybird beetles, and spray Rogor (Dimethoate 30 EC @ 1 ml/L) only if threshold exceeds 20 aphids/plant."
+    },
+    {
+      "question": "How to store seed potatoes naturally in rustic stores?",
+      "answer": "Store seed potatoes in well-ventilated, diffused-light rustic wooden stores (DES stores) in thin layers (2-3 tubers deep). Diffused light encourages short, sturdy green sprouts while preventing rotting and rodent damage."
+    },
+    {
+      "question": "How to manage Powdery and Downy Mildew in Cucurbits?",
+      "answer": "Powdery mildew shows white fungal powder on upper leaf surfaces; spray Wettable Sulfur (2 g/L). Downy mildew causes angular yellow leaf patches with purplish underside mold; spray Metalaxyl + Mancozeb (2 g/L) and improve drainage."
+    },
+    {
+      "question": "How to grow Oyster Mushrooms at home in straw bags?",
+      "answer": "Chop dry paddy straw to 2-3 inches, boil in water for 45 minutes, drain and cool to room temperature. Layer sterilized straw with mushroom spawn (Pleurotus) in perforated plastic bags, keep in dark room (22-25°C), and open for fruiting in 18-21 days."
+    },
+    {
+      "question": "How does beekeeping increase vegetable crop pollination and yield?",
+      "answer": "Honeybees provide cross-pollination for cucurbits, mustard, apples, and tomatoes, increasing fruit set by 30–50%, reducing misshapen fruits, and providing supplementary honey income. Avoid chemical spraying during morning bee foraging hours."
+    },
+    {
+      "question": "When and how should compost manure be applied?",
+      "answer": "Apply well-decomposed compost (1–2 tons per ropani) 2–3 weeks before sowing during final land preparation and mix thoroughly into the top 15 cm of soil. Never leave compost exposed on the surface to prevent nutrient volatilization."
+    },
+    {
+      "question": "How to correct acidic soil using agricultural lime (Chun)?",
+      "answer": "Test soil pH first; if pH is below 5.5, broadcast agricultural limestone powder (Calcium carbonate @ 25-50 kg/ropani) evenly during land preparation 3-4 weeks before planting and mix well with soil moisture."
+    },
+    {
+      "question": "How to prepare Neem-based natural pesticide?",
+      "answer": "Crush 5 kg fresh green Neem leaves in 10 L water, add 1 L cow urine, and allow to ferment for 3–4 days. Filter through a cloth and dilute 1:4 with water, adding a pinch of mild soap as a sticking agent. Spray thoroughly to deter chewing and sucking insects."
+    }
+  ],
+  "ne": [
+    {
+      "question": "मल भनेको के हो?",
+      "answer": "मल भनेको बिरुवालाई आवश्यक पोषक तत्व (नाइट्रोजन, फस्फोरस, पोटास आदि) उपलब्ध गराउने पदार्थ हो। यसले बालीलाई स्वस्थ बनाउँछ, रोग प्रतिरोधी क्षमता बढाउँछ र उत्पादनमा उल्लेख्य वृद्धि गर्छ।"
+    },
+    {
+      "question": "गोलभेँडामा कुन मल हाल्ने?",
+      "answer": "गोलभेँडालाई राम्रोसँग पाकेको गोठेमल वा कम्पोस्ट (२–३ केजी प्रति बोट) अनिवार्य हुन्छ। रोप्ने बेला डीएपी र पोटास दिनुहोस्, र बिरुवा बढेपछि युरिया तथा फल लाग्ने बेला पोटास र बोरोन मल थप्नुहोस्।"
+    },
+    {
+      "question": "गोलभेँडाका लागि कुन मल राम्रो हुन्छ?",
+      "answer": "गोलभेँडालाई राम्रोसँग पाकेको गोठेमल वा कम्पोस्ट (२–३ केजी प्रति बोट) अनिवार्य हुन्छ। रोप्ने बेला डीएपी र पोटास दिनुहोस्, र बिरुवा बढेपछि युरिया तथा फल लाग्ने बेला पोटास र बोरोन मल थप्नुहोस्।"
+    },
+    {
+      "question": "गोलभेँडामा फूल र फल लाग्ने बेला कुन मल हाल्ने?",
+      "answer": "फूल र फल लाग्ने बेला धेरै युरिया नहाल्नुहोस्। फल ठूलो र चम्किलो बनाउन पोटास (Potash) र फूल झर्न नदिन बोरोन (Boron) १ ग्राम प्रति लिटर पानीमा घोलेर पातमा छर्कनुहोस्।"
+    },
+    {
+      "question": "जैविक झोलमोल मल कसरी बनाउने?",
+      "answer": "झोलमोल बनाउन गाईभैँसीको गहुँत, गोबर, पानी र तीतो/पीरो वनस्पति (तितेपाती, असुरो, खिर्रो, सिस्नो) ड्रममा २१ दिन कुहाउनुपर्छ। बिरुवामा प्रयोग गर्दा १ भाग झोलमोलमा ४ देखि ६ भाग पानी मिसाएर जरामा वा पातमा छर्कनुहोस्।"
+    },
+    {
+      "question": "गोलभेँडा कहिले लगाउने?",
+      "answer": "तराईमा भदौदेखि कात्तिकसम्म (हिउँदे बाली) रोपिन्छ। मध्यपहाडमा खुला ठाउँमा फागुन-चैतमा र प्लास्टिक टनेल भित्र साउन-भदौ तथा बाह्रैमास बेमौसमी गोलभेँडा खेती गर्न सकिन्छ।"
+    },
+    {
+      "question": "गोलभेँडा कुन मौसममा लगाइन्छ?",
+      "answer": "तराईमा भदौदेखि कात्तिकसम्म (हिउँदे बाली) रोपिन्छ। मध्यपहाडमा खुला ठाउँमा फागुन-चैतमा र प्लास्टिक टनेल भित्र साउन-भदौ तथा बाह्रैमास बेमौसमी गोलभेँडा खेती गर्न सकिन्छ।"
+    },
+    {
+      "question": "गोलभेँडाको पात किन पहेंलो हुन्छ?",
+      "answer": "पात पहेंलो हुनुमा नाइट्रोजन मलको कमी, बढी पानी, जरा कुहिनु वा ढुसी रोग मुख्य कारण हुन्। यदि तल्लो पातहरू पूरै पहेंलो भएमा युरिया वा कम्पोस्ट मल दिनुहोस्; माटो धेरै चिसो भए सिँचाइ कम गर्नुहोस् र दाग भए डढुवाको उपचार गर्नुहोस्।"
+    },
+    {
+      "question": "गोलभेँडामा रोग लागेको कसरी थाहा पाउने?",
+      "answer": "पातमा खैरो वा कालो दाग देखिनु, सेतो ढुसी लाग्नु, दिउँसो बोट ओइलाउनु, पात खुम्चिनु, फलमा दाग वा कुहिने लक्षण देखिनु रोगका प्रमुख संकेत हुन्। समयमै पहिचान गरी रोकथाम गर्नुपर्छ।"
+    },
+    {
+      "question": "अर्ली ब्लाइट भनेको के हो?",
+      "answer": "अर्ली ब्लाइट ढुसीबाट लाग्ने रोग हो। यसमा पुराना पातहरूमा गोलाकार चक्राकार खैरो दागहरू देखिन्छन्। संक्रमित पात हटाउनुहोस्, पातमा पानी नपर्ने गरी सिँचाइ गर्नुहोस् र म्यानकोजेब (Mancozeb) २–२.५ ग्राम प्रति लिटर पानीमा मिसाएर छर्कनुहोस्।"
+    },
+    {
+      "question": "गोलभेँडामा अर्ली ब्लाइटको उपचार कसरी गर्ने?",
+      "answer": "अर्ली ब्लाइट ढुसीबाट लाग्ने रोग हो। यसमा पुराना पातहरूमा गोलाकार चक्राकार खैरो दागहरू देखिन्छन्। संक्रमित पात हटाउनुहोस्, पातमा पानी नपर्ने गरी सिँचाइ गर्नुहोस् र म्यानकोजेब (Mancozeb) २–२.५ ग्राम प्रति लिटर पानीमा मिसाएर छर्कनुहोस्।"
+    },
+    {
+      "question": "पछौटे डढुवा भनेको के हो?",
+      "answer": "पछौटे डढुवा चिसो र ओसिलो मौसममा लाग्ने खतरनाक रोग हो। यसमा पात, डाँठ र फलमा पानीले भिजेको जस्तो गाढा कालो दाग देखिन्छ। बढी संक्रमित बिरुवा उखेलेर नष्ट गर्नुहोस् र मेटाल्याक्सिल + म्यानकोजेब (कृल्याक्सिल/रिडोमिल) २ ग्राम प्रति लिटर वा कपर अक्सिक्लोराइड छर्कनुहोस्।"
+    },
+    {
+      "question": "गोलभेँडामा पछौटे डढुवा कसरी नियन्त्रण गर्ने?",
+      "answer": "पछौटे डढुवा चिसो र ओसिलो मौसममा लाग्ने खतरनाक रोग हो। यसमा पात, डाँठ र फलमा पानीले भिजेको जस्तो गाढा कालो दाग देखिन्छ। बढी संक्रमित बिरुवा उखेलेर नष्ट गर्नुहोस् र मेटाल्याक्सिल + म्यानकोजेब (कृल्याक्सिल/रिडोमिल) २ ग्राम प्रति लिटर वा कपर अक्सिक्लोराइड छर्कनुहोस्।"
+    },
+    {
+      "question": "गोलभेँडामा पात खन्ने कीरा कसरी नियन्त्रण गर्ने?",
+      "answer": "पात खन्ने कीराले पातभित्र सुरुङ बनाएर सेतो नागबेली धर्काहरू बनाउँछ। पहेंलो टाँसिने ट्रयाप प्रयोग गर्नुहोस्, कीरा लागेका पात टिपेर नष्ट गर्नुहोस् र निमको तेल (३-५ मि.लि. प्रति लिटर) वा एबामेक्टिन (१ मि.लि. प्रति लिटर) पानीमा मिसाएर छर्कनुहोस्।"
+    },
+    {
+      "question": "गोलभेँडाको फलको फेद कालो भएर कुहिने समस्या कसरी समाधान गर्ने?",
+      "answer": "फलको फेद कालो भएर कुहिने समस्या क्याल्सियमको कमी र अनियमित सिँचाइले हुन्छ। माटोमा सधैं समान चिस्यान राख्न छापो (mulch) प्रयोग गर्नुहोस् र क्याल्सियम नाइट्रेट (२ ग्राम प्रति लिटर) पानीमा घोलेर पातमा छर्कनुहोस्।"
+    },
+    {
+      "question": "गोलभेँडाको फलमा प्वाल पार्ने कीरा कसरी नियन्त्रण गर्ने?",
+      "answer": "फलमा प्वाल पार्ने कीराले फलभित्र पसेर गुदी खान्छ र फल कुहाउँछ। फेरोमोन ट्रयाप (हेलिल्यूर) राख्नुहोस्, निमजन्य विषादी वा जैविक बीटी (Bt) प्रयोग गर्नुहोस्, र धेरै प्रकोप भएमा इमामेक्टिन बेन्जोएट (०.५ ग्राम प्रति लिटर) छर्कनुहोस्।"
+    },
+    {
+      "question": "गोलभेँडामा सेतो झिँगा कसरी नियन्त्रण गर्ने?",
+      "answer": "सेतो झिँगाले पातको रस चुस्छ र पात खुम्चिने भाइरस सार्छ। टनेलमा जाली र पहेंलो टाँसिने ट्रयाप लगाउनुहोस्, र कीरा नियन्त्रण गर्न इमिडाक्लोप्रिड (Imidacloprid) ०.५ मि.लि. प्रति लिटर पानीमा मिसाएर छर्कनुहोस्।"
+    },
+    {
+      "question": "गोलभेँडामा लाही कीराको नियन्त्रण कसरी गर्ने?",
+      "answer": "लाही कीराले मुन्टो र पातको रस चुसेर बिरुवा कमजोर बनाउँछ र मह जस्तो टाँसिने पदार्थ निकाल्छ। साबुनपानी, निमको तेल (५ मि.लि. प्रति लिटर) वा बढी प्रकोप भएमा रोगर/डाइमेथोएट १.५ मि.लि. प्रति लिटर पानीमा छर्कनुहोस्।"
+    },
+    {
+      "question": "गोलभेँडामा रातो सुलसुलेको उपचार के हो?",
+      "answer": "रातो सुलसुलेले पातको पछाडि जालो बनाएर रस चुस्छ र पातमा साना पहेंला थोप्ला बनाउँछ। सल्फर (Sulphur) २ ग्राम प्रति लिटर पानीमा घोलेर पातको मुनि पर्ने गरी छर्कनुहोस् वा उपयुक्त सुलसुलेनाशक प्रयोग गर्नुहोस्।"
+    },
+    {
+      "question": "गोलभेँडा ओइलाउने रोग कसरी व्यवस्थापन गर्ने?",
+      "answer": "ब्याक्टेरियल विल्टमा पात पहेंलो नभई दिउँसो बिरुवा अचानक ओइलाउँछ र डाँठबाट सेतो पीप जस्तो तरल पदार्थ निस्कन्छ। रोगी बिरुवा उखेलेर खाडलमा पुर्नुहोस्, अग्लो ड्याङ बनाएर पानीको निकास मिलाउनुहोस् र बाली चक्र अपनाउनुहोस्।"
+    },
+    {
+      "question": "नर्सरीमा बेर्ना कुहिने रोगबाट कसरी बचाउने?",
+      "answer": "ड्याम्पिङ अफ ढुसीका कारण बेर्नाको जमिनको सतहको भाग कुहिएर ढल्छ। बीउलाई ट्राइकोडर्मा वा थिरामले उपचार गरेर मात्र रोप्नुहोस्, नर्सरीमा पानी नजम्ने बनाउनुहोस् र घाममा माटो तताएर मात्र प्रयोग गर्नुहोस्।"
+    },
+    {
+      "question": "गोलभेँडामा कति दिनको फरकमा सिँचाइ गर्ने?",
+      "answer": "गोलभेँडालाई हप्ताको २ देखि ३ पटक गहिरो गरी सिँचाइ गर्नुपर्छ। फल लागिरहेको बेला माटो सुक्न नदिनुहोस्, नत्र फल चर्किन्छ। बिहानको समयमा जरामा मात्र पानी हाल्नुहोस्, पातमा पानी नपार्नुहोस्।"
+    },
+    {
+      "question": "गोलभेँडालाई कति पानी चाहिन्छ?",
+      "answer": "गोलभेँडालाई हप्ताको २ देखि ३ पटक गहिरो गरी सिँचाइ गर्नुपर्छ। फल लागिरहेको बेला माटो सुक्न नदिनुहोस्, नत्र फल चर्किन्छ। बिहानको समयमा जरामा मात्र पानी हाल्नुहोस्, पातमा पानी नपार्नुहोस्।"
+    },
+    {
+      "question": "गोलभेँडा खेतीमा थोपा सिँचाइका के फाइदा छन्?",
+      "answer": "थोपा सिँचाइले पानी र घुलनशील मल सिधै जरामा पुर्याउँछ। यसले ४०-६०% पानी बचत गर्छ, झारपात कम उमार्छ, पात सुक्खा राखेर डढुवा रोग लाग्न दिँदैन र उत्पादन २०-३०% ले बढाउँछ।"
+    },
+    {
+      "question": "गोलभेँडाको स्वस्थ बेर्ना नर्सरीमा कसरी तयार गर्ने?",
+      "answer": "उठेको ड्याङ वा प्लास्टिक ट्रेमा माटो, कम्पोस्ट र कोकोपिटको मिश्रण बनाई बीउ रोप्नुहोस्। झरीबाट बचाउन प्लास्टिक ओढाउनुहोस्। बेर्ना ४-५ वटा पात भएको र २५ देखि ३० दिनको भएपछि खेतमा सार्नुहोस्।"
+    },
+    {
+      "question": "गोलभेँडा रोप्दा बिरुवा र लाइन बीचको दूरी कति राख्ने?",
+      "answer": "होचो (झाडी) जातका लागि बोटदेखि बोट ४५-५० से.मी. र लाइनदेखि लाइन ६० से.मी. दूरी राख्नुहोस्। टनेलमा अग्लो जातका लागि बोटबीच ५०-६० से.मी. र लाइनबीच ७५-९० से.मी. दूरी राख्नुपर्छ।"
+    },
+    {
+      "question": "गोलभेँडाको अनावश्यक हाँगा किन र कसरी काँटछाँट गर्ने?",
+      "answer": "पात र मुख्य डाँठको कापबाट आउने अनावश्यक साना हाँगाहरू (suckers) लाई हातले चुँडेर हटाउनुहोस्। काँटछाँट गर्नाले बिरुवामा हावा खेल्छ, रोग कम लाग्छ र फल ठूलो तथा गुणस्तरीय फल्छ।"
+    },
+    {
+      "question": "गोलभेँडामा बाँसको भाटा वा डोरीले सहारा दिनु किन जरूरी छ?",
+      "answer": "बाँसको भाटा वा डोरीले बिरुवालाई बाँधेर सहारा दिँदा फल र पात माटोमा छुँदैन। यसले माटोबाट सर्ने ढुसी रोग रोक्छ, घाम-हावा राम्रोसँग पाउँछ र गोडमेल तथा फल टिप्न सजिलो हुन्छ।"
+    },
+    {
+      "question": "गोलभेँडामा फूल किन झर्छ?",
+      "answer": "अत्यधिक चिसो वा गर्मी (३२°C भन्दा बढी), पानीको कमी, परागसेचन नहुनु वा बोरोनको कमीले फूल झर्छ। बिहान बिरुवा हल्का हल्लाइदिनुहोस्, नियमित पानी दिनुहोस् र बोरोन (Boron) वा प्लानोफिक्स छर्कनुहोस्।"
+    },
+    {
+      "question": "गोलभेँडाको फल किन फुट्छ वा चर्किन्छ?",
+      "answer": "लामो खडेरीपछि अचानक धेरै पानी पर्दा वा सिँचाइ गर्दा फलको बाहिरी बोक्रा फुट्छ। माटोमा छापो (मल्चिङ) हालेर समान चिस्यान कायम राख्नुहोस् र फल पूर्ण रातो हुनुभन्दा अघि (पहेंलो-रातो हुँदै) टिप्नुहोस्।"
+    },
+    {
+      "question": "हिउँदमा गोलभेँडालाई तुषारो र चिसोबाट कसरी जोगाउने?",
+      "answer": "हिउँदमा तुषारो र चिसोबाट बचाउन प्लास्टिक टनेल बनाउनुहोस्, चिसो रातमा पराल वा एग्रो-नेटले छोप्नुहोस् र साँझपख हल्का सिँचाइ गर्नाले जमिनको तापक्रम कायम रहन मद्दत गर्छ।"
+    },
+    {
+      "question": "विषादी छरेपछि बाली टिप्न कति दिन कुर्नुपर्छ?",
+      "answer": "विषादी छरेपछि बाली टिप्न कुर्नुपर्ने सुरक्षित समय (PHI): निमको तेल १-२ दिन, म्यानकोजेब जस्ता विषादी ७ देखि १० दिन, र कडा प्रणालीगत विषादीमा १४ देखि २१ दिन पर्खनुपर्छ। खानुअघि फल राम्रोसँग पखाल्नुहोस्।"
+    },
+    {
+      "question": "गोलभेँडामा खराने रोगको उपचार कसरी गर्ने?",
+      "answer": "खराने रोग लाग्दा पातको सतहमा सेतो धुलो छरेको जस्तो देखिन्छ र पात सुकेर झर्छ। यसको रोकथामका लागि घुलनशील सल्फर (२ ग्राम प्रति लिटर) वा हेक्साकोनाजोल (१ मि.लि. प्रति लिटर पानी) छर्कनुहोस्।"
+    },
+    {
+      "question": "गोलभेँडामा सेप्टोरिया पातको थोप्ले रोग कसरी रोक्ने?",
+      "answer": "सेप्टोरिया पातको थोप्ले रोगमा तल्लो पातहरूमा गाढा खैरो किनारा र बीचमा खरानी रङ भएका धेरै साना थोप्लाहरू देखिन्छन्। रोगी पातहरू हटाउनुहोस्, भुइँमा छापो हाल्नुहोस् र कपर अक्सिक्लोराइड २ ग्राम प्रति लिटर पानीमा छर्कनुहोस्।"
+    },
+    {
+      "question": "गोलभेँडा खेतीका लागि माटोको तयारी र उपयुक्त पीएच कति हुनुपर्छ?",
+      "answer": "गोलभेँडाका लागि ६.० देखि ६.८ पीएच भएको, प्रशस्त प्राङ्गारिक मल भएको दोमट माटो सबैभन्दा राम्रो हुन्छ। माटो धेरै अमिलो भएमा रोप्नुभन्दा ३ हप्ता अघि प्रति रोपनी २५-३० केजी कृषि चुन मिसाउनुहोस्।"
+    },
+    {
+      "question": "गोलभेँडा खेतमा झारपात कसरी नियन्त्रण गर्ने?",
+      "answer": "झारपात नियन्त्रण गर्न कालो-चाँदी रङको प्लास्टिक मल्च सबैभन्दा उत्तम हुन्छ, जसले कीरा पनि भगाउँछ। पराल वा सुकेको पातको छापो हाल्न सकिन्छ। हातले गोडमेल गर्दा बिरुवाको जरा नकाटिने गरी हल्कासँग गर्नुहोस्।"
+    },
+    {
+      "question": "गोलभेँडा टिप्ने सही समय कहिले हो?",
+      "answer": "नजिकैको बजार वा आफ्नै उपभोगका लागि फल रातो र छिप्पिएपछि टिप्नुहोस्। टाढा ढुवानी गर्नुपर्ने भएमा फलको फेद हल्का गुलाबी वा पहेंलो हुन थालेको अवस्था (Breaker stage) मा टिप्नुपर्छ।"
+    },
+    {
+      "question": "प्लास्टिक टनेल भित्र बेमौसमी गोलभेँडा खेती कसरी गर्ने?",
+      "answer": "प्लास्टिक टनेलले बर्खाको झरी, अत्यधिक चिसो र कीराबाट बचाउँछ। अग्लो हुने हाइब्रिड जात छान्नुहोस्, १.५–२ मिटर उचाइको टनेल बनाउनुहोस्, नियमित काँटछाँट गर्नुहोस् र घाम लाग्दा हावा आवतजावत गराउनुहोस्।"
+    },
+    {
+      "question": "गोलभेँडाको फल घामले डढ्ने समस्या किन हुन्छ?",
+      "answer": "अत्यधिक चर्को घाम सिधै काँचो वा पाक्दै गरेको फलमा पर्दा फलमा सेतो वा हल्का खैरो छाला जस्तो दाग बन्छ। बिरुवामा पर्याप्त पातहरू रहन दिनुहोस्, धेरै काँटछाँट नगर्नुहोस् र चर्को गर्मीमा ३०% को छहारी जाली प्रयोग गर्नुहोस्।"
+    },
+    {
+      "question": "टिपेको गोलभेँडा धेरै दिनसम्म ताजा राख्न कसरी भण्डारण गर्ने?",
+      "answer": "छिप्पिएका काँचा वा हल्का पाकेका फललाई १२ देखि १५ डिग्री सेल्सियसको हावा खेल्ने ठाउँमा राख्नुहोस्। नपाकेको फललाई सिधै चिसो फ्रिजमा नराख्नुहोस्, यसले स्वाद र गुणस्तर बिगार्छ। पाकेको फललाई शीतल ठाउँमा क्रेटमा फिँजाएर राख्नुहोस्।"
+    },
+    {
+      "question": "बोर्डो मिश्रण ढुसीनाशक कसरी बनाउने?",
+      "answer": "बोर्डो मिश्रण बनाउन १०० ग्राम नीलोथुथो (Copper Sulfate) र १०० ग्राम नभिजेको चुनालाई १० लिटर पानीमा प्लास्टिकको भाँडोमा घोल्नुपर्छ (१:१:१०० अनुपात)। फलामको काँटी डुबाएर तामाको लेप नबस्ने गरी परीक्षण गर्नुहोस् र ताजा मिश्रण डढुवा तथा ढुसी रोगमा छर्कनुहोस्।"
+    },
+    {
+      "question": "ट्राइकोडर्मा जैविक ढुसीनाशक कसरी प्रयोग गर्ने?",
+      "answer": "ट्राइकोडर्मा माटोमा बस्ने हानिकारक ढुसी खाने मित्रवत ढुसी हो। १ केजी ट्राइकोडर्मालाई १०० केजी राम्रोसँग पाकेको कम्पोस्ट वा गोबर मलमा मिसाएर छाँयामा ७ दिन चिसो बनाएर राख्नुहोस्, र बेर्ना सार्ने खाडल वा नर्सरीमा प्रयोग गर्नुहोस्।"
+    },
+    {
+      "question": "स्थानीय जडीबुटीबाट वानस्पतिक जैविक विषादी कसरी बनाउने?",
+      "answer": "तितेपाती, असुरो, बकाइनो, निमको पात, खुर्सानी र लसुनलाई पिसेर पानी वा गाईको गहुँतमा १०-१५ दिन कुहाउनुहोस्। कपडाले छानेर १ भाग झोलमा ५ भाग पानी मिसाउनुहोस् र थोरै साबुनको फिँज हालेर रस चुस्ने कीराहरूमा छर्कनुहोस्।"
+    },
+    {
+      "question": "नेपालमा माटो परीक्षण कसरी गर्ने?",
+      "answer": "आफ्नो खेतको १०-१५ ठाउँबाट 'V' आकारमा १५ से.मी. गहिराइसम्मको माटो खनेर संकलन गर्नुहोस्। राम्रोसँग मिसाएर छाँयामा सुकाउनुहोस् र ५०० ग्राम माटो स्थानीय कृषि ज्ञान केन्द्र, पालिकाको कृषि शाखा वा क्षेत्रीय माटो प्रयोगशालामा पठाउनुहोस्।"
+    },
+    {
+      "question": "गँड्यौला मल (भर्मीकम्पोस्ट) कसरी बनाउने?",
+      "answer": "छाया भएको ठाउँमा १ मिटर गहिरो इँटाको ट्याङ्की बनाई घाँसपात र आधा कुहिएको गोबर मलको तह बनाउनुहोस्। त्यसमा 'आइसिनिया फेटिडा' रातो गँड्यौला छाड्नुहोस्। ६०-७०% चिस्यान राख्नुहोस्, र ४५-६० दिनपछि दानेदार कालो मल तयार हुन्छ।"
+    },
+    {
+      "question": "बिरुवामा म्याग्नेसियम र जिंकको कमीका लक्षण के हुन्?",
+      "answer": "म्याग्नेसियमको कमीमा पुराना तल्लो पातका नशाहरू हरियै रहन्छन् तर नशा बीचको भाग पहेंलो हुन्छ (Interveinal Chlorosis)। जिंकको कमीमा नयाँ पातहरू साना, झुप्पा जस्ता र बिरुवाको टुप्पो खुम्चिन्छ। यसका लागि म्याग्नेसियम सल्फेट वा जिंक सल्फेट छर्कनुहोस्।"
+    },
+    {
+      "question": "हरियो मल (धैँचा) कसरी प्रयोग गर्ने?",
+      "answer": "हरियो मलका लागि छिटो बढ्ने कोसेबाली जस्तै धैँचा (Dhaincha) वा सनहेम्प छर्नुहोस्। बाली फूल फुल्ने बेला (४५-५० दिनमा) ट्रयाक्टर वा हलोले जोतेर माटोमा मिलाउनुहोस्। यसले माटोमा प्रति हेक्टर २०-३० केजी नाइट्रोजन थप्छ।"
+    },
+    {
+      "question": "आलुमा डढुवा रोग कसरी नियन्त्रण गर्ने?",
+      "answer": "आलुको पछौटे डढुवा चिसो कुहिरो र पानी पर्दा पात तथा दानामा लाग्छ। रोग लाग्नुअघि नै म्यानकोजेब (२.५ ग्राम प्रति लिटर) छर्कनुहोस्। रोगका थोप्ला देखिएमा मेटाल्याक्सिल + म्यानकोजेब (२ ग्राम प्रति लिटर) छर्कनुहोस् र आलुको फेदमा राम्रोसँग माटो चढाउनुहोस्।"
+    },
+    {
+      "question": "खुर्सानीमा पात खुम्चिने र फल कुहिने रोग कसरी रोक्ने?",
+      "answer": "पात खुम्चिने रोग थ्रिप्स र सुलसुलेले सार्ने भाइरसले हुन्छ; यसका लागि इमिडाक्लोप्रिड वा फेनाजाक्विन छर्कनुहोस्। फल कुहिने वा डाँठ सुक्ने (एन्थ्राक्नोज) रोगका लागि कपर अक्सिक्लोराइड (२.५ ग्राम प्रति लिटर) वा एजोक्सीस्ट्रोबिन छर्कनुहोस्।"
+    },
+    {
+      "question": "काँक्रो र लहरे तरकारीमा औँसा पार्ने फलको झिँगा कसरी नियन्त्रण गर्ने?",
+      "answer": "फलको झिँगाले कलिलो फलभित्र फुल पारेर कीरा (औँसा) बनाउँछ र फल कुहाउँछ। क्यु-ल्युर (Cue-lure) फेरोमोन ट्रयाप प्रति रोपनी ४ वटा झुन्ड्याउनुहोस्, प्रोटिन बेट प्रयोग गर्नुहोस् र कलिला फललाई कागजको थैलाले छोप्नुहोस्।"
+    },
+    {
+      "question": "काउली र बन्दामा गाँठे रोग कसरी नियन्त्रण गर्ने?",
+      "answer": "गाँठे रोग (Clubroot) ले जरामा गिर्खा बनाएर दिउँसो बोट ओइलाउँछ। यो अमिलो माटोमा बढी फैलिन्छ। रोप्नुभन्दा ३ हप्ताअघि प्रति रोपनी ५० केजी कृषि चुन हालेर माटोको पीएच ७ भन्दा माथि पुर्याउनुहोस् र रोगी खेतमा तोरी/काउली समूहका बाली नलगाउनुहोस्।"
+    },
+    {
+      "question": "काउली र बन्दामा पुतलीको लाभ्रे कीरा (DBM) कसरी नियन्त्रण गर्ने?",
+      "answer": "डायमण्डब्याक मथ (DBM) का हरिया लाभ्रेले पातमा जाली बनाएर खान्छन्। फेरोमोन ट्रयाप प्रयोग गर्नुहोस्, तोरीलाई पासो बालीको रूपमा लगाउनुहोस् र जैविक ब्याक्टेरिया बीटी (Bt) वा स्पिनोस्याड (०.५ मि.लि. प्रति लिटर) छर्कनुहोस्।"
+    },
+    {
+      "question": "प्याज र लसुनमा बैजनी धब्बा रोग कसरी रोक्ने?",
+      "answer": "बैजनी धब्बा रोग (Purple Blotch) मा पातमा बैजनी-खैरो लाम्चिला दागहरू बन्छन्। खेतमा पानी जम्न नदिनुहोस्, माथिबाट पानी नछर्कनुहोस् र म्यानकोजेब वा डिफेनोकोनाजोल (१ मि.लि. प्रति लिटर) मा टाँसिने गम (sticker) मिसाएर छर्कनुहोस्।"
+    },
+    {
+      "question": "एकीकृत शत्रुजीव व्यवस्थापन (IPM) भनेको के हो?",
+      "answer": "आईपीएम भनेको बालीका शत्रु कीरा र रोग नियन्त्रण गर्ने वातावरणमैत्री उपाय हो। यसमा बाली चक्र, सरसफाइ, पहेँलो/फेरोमोन ट्रयाप, जैविक मित्रजीव (ट्राइकोडर्मा, लेडीबर्ड) प्रयोग गरिन्छ र अन्तिम विकल्पको रूपमा मात्र विषादी प्रयोग गरिन्छ।"
+    },
+    {
+      "question": "पहेंलो र नीलो टाँसिने ट्रयापले कसरी काम गर्छ?",
+      "answer": "पहेंलो टाँसिने ट्रयापले सेतो झिँगा, लाही र पात खन्ने कीरालाई आकर्षित गरी टाँसेर मार्छ। नीलो टाँसिने ट्रयापले थ्रिप्स कीरालाई समात्छ। बिरुवाको मुन्टोभन्दा १५-२० से.मी. माथि प्रति रोपनी १०-१५ वटा ट्रयाप झुन्ड्याउनुपर्छ।"
+    },
+    {
+      "question": "फेरोमोन ट्रयापले कसरी कीरा नियन्त्रण गर्छ?",
+      "answer": "फेरोमोन ट्रयापमा पोथी कीराको गन्ध (सेक्स फेरोमोन) राखिएको हुन्छ, जसले भाले पुतलीलाई आकर्षित गरी जालमा पार्छ। भाले कीरा नष्ट भएपछि प्रजनन् चक्र रोकिन्छ र बालीमा लाभ्रे कीराको आक्रमण निकै कम हुन्छ।"
+    },
+    {
+      "question": "प्लास्टिक मल्चिङ भनेको के हो र यसका के फाइदा छन्?",
+      "answer": "कालो-चाँदी रङको प्लास्टिकले ड्याङ छोप्ने विधिलाई मल्चिङ भनिन्छ। यसले झार उम्रन दिँदैन, माटोको चिस्यान जोगाउँछ, जरालाई न्यानो राखेर छिटो उत्पादन दिन्छ, घामको परावर्तनले कीरा भगाउँछ र माटोबाट सर्ने रोग रोक्छ।"
+    },
+    {
+      "question": "प्लास्टिक टनेलमा तापक्रम र हावाको व्यवस्थापन कसरी गर्ने?",
+      "answer": "घाम लागेको दिन बिहानै टनेलको दुवै छेउका पर्दा खोलेर ओस र तातो हावा बाहिर निकाल्नुहोस् (उपयुक्त तापक्रम: २२–२८°C)। हिउँदमा साँझ पर्नुअघि पर्दा बन्द गरेर दिनको तातो भित्रै थुन्नुपर्छ ताकि तुषारो नपरोस्।"
+    },
+    {
+      "question": "तरकारी बालीलाई असिनाबाट कसरी जोगाउने?",
+      "answer": "नर्सरी र खुला खेतका तरकारी ड्याङमा बाँस वा जीआई पाइपको फ्रेम बनाएर ३०-४० मेसको नाइलन एन्टि-हेल नेट (असिना छेक्ने जाली) लगाउनुहोस्। यसले असिनाको ठक्कर छेकेर पात र फल चोटपटक लाग्नबाट जोगाउँछ।"
+    },
+    {
+      "question": "टनेल खेतीमा आकाशे पानी संकलन कसरी गर्ने?",
+      "answer": "प्लास्टिक टनेलको छानाबाट बग्ने बर्खाको पानीलाई पीभीसी पाइप वा पाइप-गटर जोडेर सिल्पाउलिन प्लास्टिक ओछ्याएको पोखरीमा जम्मा गर्न सकिन्छ। १०० वर्गमिटरको छानाबाट बर्खामा ८० हजार लिटरभन्दा बढी शुद्ध सिँचाइ पानी संकलन हुन्छ।"
+    },
+    {
+      "question": "नेपालमा कृषि तथा बाली बीमा कसरी गर्ने?",
+      "answer": "नेपाल सरकारले कृषि तथा बाली बीमाको प्रिमियममा ८०% अनुदान दिन्छ। किसानले आफ्नो लालपुर्जा र नागरिकताको प्रतिलिपि लिएर नजिकको निर्जीवन बीमा कम्पनी, सहकारी वा स्थानीय तहको कृषि शाखामा सम्पर्क गरी बाली बीमा गराउन सक्छन्।"
+    },
+    {
+      "question": "किसानले माटो परीक्षण र कृषि प्राविधिक सल्लाह कहाँ पाउँछन्?",
+      "answer": "निःशुल्क वा न्यून शुल्कमा माटो परीक्षण तथा प्राविधिक सल्लाह आफ्नै गाउँपालिका/नगरपालिकाको कृषि विकास शाखा, जिल्लास्थित कृषि ज्ञान केन्द्र (AKC) र प्रादेशिक माटो तथा मल परीक्षण प्रयोगशालाबाट लिन सकिन्छ।"
+    },
+    {
+      "question": "बजार पठाउन तरकारीको ग्रेडिङ र प्याकेजिङ कसरी गर्ने?",
+      "answer": "टिपेको तरकारीलाई आकार, रङ र शुद्धता अनुसार 'क', 'ख' र 'ग' श्रेणीमा छुट्याउनुहोस्। तरकारीलाई गुम्सिने प्लास्टिकको बोरामा नराखी हावा छिर्ने प्लास्टिक क्रेटमा प्याक गर्दा ढुवानीमा बिग्रिने र कुहिने समस्या हुँदैन।"
+    },
+    {
+      "question": "विषादी छर्किँदा के कस्ता सुरक्षा सावधानी अपनाउनुपर्छ?",
+      "answer": "विषादी छर्किँदा सधैं मास्क, पञ्जा, चस्मा, लामो बाहुला भएको लुगा र बुट लगाउनुहोस्। हावा चलेको विपरित दिशा वा चर्को घाममा कहिल्यै नछर्कनुहोस्। विषादी चलाउँदा केही नखानुहोस् र काम सकिएपछि साबुनपानीले नुहाउनुहोस्।"
+    },
+    {
+      "question": "विषादीका खाली भाँडा कसरी सुरक्षित नष्ट गर्ने?",
+      "answer": "विषादी सकिएपछि बोतलमा ३ पटक पानी हालेर हल्लाउँदै स्प्रे ट्याङ्कीमै खन्याउनुहोस्। भाँडोलाई फेरि प्रयोग गर्न नमिल्ने गरी फुटाउनुहोस् वा प्वाल पार्नुहोस् र पानीको स्रोतभन्दा टाढा गहिरो खाडल खनेर पुर्नुहोस्।"
+    },
+    {
+      "question": "कीरा नलागीकन पनि गोलभेँडाको पात किन माथितिर दोब्रिन्छ?",
+      "answer": "अत्यधिक गर्मी, चर्को घाम, सुक्खा हावाहुरी वा धेरै हाँगाबिँगा एकैपटक काट्दा बोटले पानी जोगाउन पात माथितिर दोब्य्राउँछ। यदि पात पहेंलो नभई हरियै र स्वस्थ छ भने यो कुनै रोग होइन र यसले उत्पादन घटाउँदैन।"
+    },
+    {
+      "question": "के काँचो गोबर सिधै खेतबारीमा हाल्न मिल्छ?",
+      "answer": "काँचो गोबर सिधै खेतमा कहिल्यै हाल्नुहुँदैन। काँचो गोबर कुहिँदा अत्यधिक तातो र अमोनिया ग्यास निस्कन्छ जसले जरा डढाउँछ। साथै यसमा हानिकारक ढुसी, ब्याक्टेरिया र झारपातका बीउहरू हुन्छन्।"
+    },
+    {
+      "question": "गाईको काँचो दूध छर्किँदा तरकारीलाई भाइरसबाट कसरी बचाउँछ?",
+      "answer": "१ भाग गाईको काँचो दूधमा ९ भाग पानी मिसाएर पातमा छर्किँदा दूधमा भएको प्रोटिनले पातको सतहमा प्राकृतिक तह बनाउँछ। यसले बिरुवामा लाग्ने भाइरसलाई निष्क्रिय बनाउँछ र खराने रोग लाग्न दिँदैन।"
+    },
+    {
+      "question": "बाली चक्र (Crop Rotation) भनेको के हो र यो किन जरूरी छ?",
+      "answer": "एउटै जग्गामा लगातार एउटै जात वा परिवारका बाली (जस्तै गोलभेँडापछि आलु वा भन्टा) नलगाउने नियमलाई बाली चक्र भनिन्छ। बाली फेरेर दलहन वा मकै लगाउँदा माटोको उर्वराशक्ति बढ्छ र रोग-कीराको चक्र तोडिन्छ।"
+    },
+    {
+      "question": "फेद काट्ने कीरा कसरी नियन्त्रण गर्ने?",
+      "answer": "फेद काट्ने कीरा (Cutworm) दिउँसो माटोभित्र लुक्छ र राति कलिला बेर्नाको फेद काटेर ढालिदिन्छ। रोप्नुअघि खेतमा पानी जमाउने, बत्तीको पासो राख्ने र बेर्नाको फेद वरिपरि क्लोरपाइरिफस वा निमको पिना हाल्नुपर्छ।"
+    },
+    {
+      "question": "माटोमा धमिरा कसरी नियन्त्रण गर्ने?",
+      "answer": "धमिराले सुक्खा बलौटे माटोमा बिरुवाको जरा खान्छ। खेतमा नकुहिएको काठपात वा काँचो गोबर नहाल्नुहोस्। जग्गा तयारी गर्दा प्रति रोपनी २०-३० केजी निमको पिना माटोमा मिसाउनुहोस् वा क्लोरपाइरिफसले जरा वरिपरि भिजाउनुहोस्।"
+    },
+    {
+      "question": "सम्पर्क र प्रणालीगत ढुसीनाशकमा के फरक छ?",
+      "answer": "सम्पर्क ढुसीनाशक (जस्तै म्यानकोजेब, कपर) ले पातको बाहिरी भागमा बसेर रोग भित्र पस्न दिँदैन र रोग लाग्नुअघि नै छर्किनुपर्छ। प्रणालीगत ढुसीनाशक (जस्तै मेटाल्याक्सिल) बोटभित्र नशा-नशामा फैलिएर भित्रको रोग निको पार्छ।"
+    },
+    {
+      "question": "तरकारीको जरामा गाँठो पार्ने जुका (निमाटोड) कसरी रोकथाम गर्ने?",
+      "answer": "रूट-नट निमाटोडले जरामा गिर्खा बनाएर बिरुवा पहेंलो र पुड्को बनाउँछ। खेतमा सयपत्री फूल (Marigold) लगाउनुहोस्, जेठ-असारको चर्को घाममा पारदर्शी प्लास्टिक ओढाएर माटो तताउनुहोस्, र जैविक पेसिलोमाइसिस प्रयोग गर्नुहोस्।"
+    },
+    {
+      "question": "विषादी छर्ने स्प्रे पम्पको सही नापजाँच कसरी गर्ने?",
+      "answer": "स्प्रे पम्पमा सफा पानी भरेर १० मिटर लम्बाइ र १० मिटर चौडाइको जग्गामा सामान्य गतिमा छर्कनुहोस्। कति पानी खर्च भयो नाप्नुहोस् र प्रति रोपनी चाहिने पानी हिसाब गर्नुहोस्। यसले गर्दा विषादी कम भएर काम नगर्ने वा बढी भएर पात डढ्ने समस्या हुँदैन।"
+    },
+    {
+      "question": "मकैमा अमेरिकन फौजी कीरा कसरी नियन्त्रण गर्ने?",
+      "answer": "फौजी कीराले मकैको पात र गुभो खाएर जाली बनाउँछ र विष्टा छाड्छ। मकैको गुभोमा बालुवा वा काठको खरानी खुर्सानीको धुलो मिसाएर हाल्नुहोस्, र धेरै प्रकोप भएमा स्पिनिटोराम (०.५ मि.लि.) वा इमामेक्टिन बेन्जोएट (०.४ ग्राम प्रति लिटर) पानीमा छर्कनुहोस्।"
+    },
+    {
+      "question": "धानमा गवारो र मरुवा रोग कसरी नियन्त्रण गर्ने?",
+      "answer": "धानको गवारो कीराले गुभो सुकाउने (Dead heart) र सेतो बाला बनाउँछ; यसका लागि बत्तीको पासो र कार्टाप हाइड्रोक्लोराइड प्रयोग गर्नुहोस्। मरुवा (ब्लास्ट) रोगमा पातमा आँखा आकारका खैरो दाग बन्छन्; यसका लागि ट्राइसाइक्लाजोल १ ग्राम प्रति लिटर छर्कनुहोस्।"
+    },
+    {
+      "question": "अदुवामा गानो कुहिने रोग कसरी नियन्त्रण गर्ने?",
+      "answer": "अदुवाको गानो कुहिने रोग माटोमा पानी जम्दा ढुसीका कारण लाग्छ। अग्लो ड्याङ बनाएर पानी नजम्ने बनाउनुहोस्, बीउ रोप्नुअघि म्यानकोजेब (३ ग्राम प्रति लिटर) को घोलमा ३० मिनेट डुबाएर उपचार गर्नुहोस् र ट्राइकोडर्मा प्रयोग गर्नुहोस्।"
+    },
+    {
+      "question": "सुन्तला र कागतीमा फल झर्ने समस्या कसरी रोक्ने?",
+      "answer": "सुन्तला र कागतीमा फल झर्नुमा फलको झिँगा, ढुसी रोग वा सूक्ष्म पोषक तत्वको कमी मुख्य कारण हुन्। फूल फुल्दा र फल केराउको दाना जत्रो हुँदा जिंक सल्फेट र बोरोन छर्कनुहोस् तथा मिथाइल युजिनोल फेरोमोन पासो झुन्ड्याउनुहोस्।"
+    },
+    {
+      "question": "लसुन र प्याजमा थ्रिप्स कीरा कसरी नियन्त्रण गर्ने?",
+      "answer": "थ्रिप्स कीराले पात कोतरेर रस चुस्छ र पातमा चाँदी जस्तो सेतो धर्सा बनाउँछ। नीलो टाँसिने ट्रयाप लगाउनुहोस्, निमजन्य विषादी (३ मि.लि. प्रति लिटर) वा फिप्रोनिल (१.५ मि.लि. प्रति लिटर पानी) बिहानको समयमा पातको फेदसम्म भिज्ने गरी छर्कनुहोस्।"
+    },
+    {
+      "question": "गोलभेँडामा तुता एब्सोलुटा (पात खन्ने पुतली) कसरी नियन्त्रण गर्ने?",
+      "answer": "तुता एब्सोलुटा (Tuta Absoluta) का लाभ्रेले गोलभेँडाको पातभित्रको हरियो भाग खान्छन् र फलमा प्वाल पार्छन्। बत्तीको पासो र तुता फेरोमोन ट्रयाप राख्नुहोस्, टनेलमा मसिनो जाली लगाउनुहोस् र कोराजेन (०.३ मि.लि. प्रति लिटर) छर्कनुहोस्।"
+    },
+    {
+      "question": "अलैँचीमा छिर्के र फुर्के रोग कसरी व्यवस्थापन गर्ने?",
+      "answer": "अलैँचीको छिर्के र फुर्के भाइरसबाट लाग्ने रोग हुन् जुन लाही कीराले सार्छ। रोगी अलैँचीको झ्याङ तत्कालै उखेलेर जलाउनुहोस्, रोगमुक्त टिस्यु कल्चर बिरुवा मात्र रोप्नुहोस् र लाही कीरा नियन्त्रण गर्न साबुनपानी वा डाइमेथोएट छर्कनुहोस्।"
+    },
+    {
+      "question": "जैविक जीवामृत मल कसरी बनाउने?",
+      "answer": "१० केजी गाईको गोबर, १० लिटर गहुँत, २ केजी सख्खर (गुड), २ केजी बेसन र १ मुठी जंगलको शुद्ध माटो २०० लिटर पानीमा घोल्नुहोस्। घडीको दिशामा दैनिक दुईपटक चलाएर ५-७ दिन छायामा राख्नुहोस्। यो जीवामृत माटोमा सिधै हाल्दा सूक्ष्म जीवाणु बढाउँछ।"
+    },
+    {
+      "question": "तोरी र रायोमा लाही कीरा कसरी नियन्त्रण गर्ने?",
+      "answer": "तोरीमा लाही कीरा जाडो मौसममा बादल लाग्दा छिटो फैलिन्छ। लाहीबाट जोगिन कात्तिक पहिलो हप्ताभित्रै तोरी छरिसक्नुहोस्। मित्रजीव लेडीबर्ड खपटे किराको संरक्षण गर्नुहोस् र धेरै प्रकोप भएमा रोगर (डाइमेथोएट १ मि.लि. प्रति लिटर पानी) छर्कनुहोस्।"
+    },
+    {
+      "question": "आलुको बीउ भण्डारण गर्ने घरेलु र देहाती तरिका के हो?",
+      "answer": "आलुको बीउलाई अँध्यारोमा नराखी हावा खेल्ने, छरिएको उज्यालो (Diffused Light) आउने काठ वा बाँसको खोरिया/र्याकमा २-३ तहमा फिँजाएर राख्नुपर्छ। यसले आलुमा छोटा, मोटा र बलिया हरिया मुना आउँछन् र आलु कुहिँदैन।"
+    },
+    {
+      "question": "काँक्रो र फर्सीमा खरानी तथा सितुवा रोग कसरी नियन्त्रण गर्ने?",
+      "answer": "पातको माथिल्लो भागमा सेतो धुलो जस्तो देखिने खराने रोगमा सल्फर (२ ग्राम प्रति लिटर) छर्कनुहोस्। पातमा पहेंला कुने दाग र मुनि बैजनी ढुसी देखिने सितुवा (Downy Mildew) का लागि मेटाल्याक्सिल + म्यानकोजेब (२ ग्राम प्रति लिटर) प्रयोग गर्नुहोस्।"
+    },
+    {
+      "question": "परालको पोकामा गोब्रे वा कन्या च्याउ खेती कसरी गर्ने?",
+      "answer": "सुकेको धानको पराललाई २-३ इन्चको टुक्रा पारी ४५ मिनेट उम्लेको पानीमा उसिन्नुहोस्। पानी तारेर कोठाको तापक्रममा चिसो बनाई प्लास्टिकको थैलामा पराल र च्याउको बीउ तह-तह गरी भर्नुहोस्। अँध्यारो कोठामा २२-२५ डिग्रीमा राखेपछि १८-२१ दिनमा च्याउ उम्रन थाल्छ।"
+    },
+    {
+      "question": "मौरीपालनले तरकारीको उत्पादन र परागसेचनमा कसरी मद्दत गर्छ?",
+      "answer": "मौरीले काँक्रो, फर्सी, तोरी, स्याउ र गोलभेँडामा पर-परागसेचन (Cross-pollination) गराएर उत्पादन ३० देखि ५० प्रतिशतले बढाउँछ र फल बाङ्गो हुनबाट जोगाउँछ। मौरी चरिरहेको बिहानी समयमा रासायनिक विषादी छर्कनु हुँदैन।"
+    },
+    {
+      "question": "खेतबारीमा कम्पोस्ट मल कहिले र कसरी प्रयोग गर्ने?",
+      "answer": "राम्रोसँग पाकेको कम्पोस्ट मल (प्रति रोपनी १ देखि २ टन) बाली लगाउनुभन्दा २-३ हप्ताअघि अन्तिम खनजोत गर्दा माटोको माथिल्लो १५ से.मी. मा राम्रोसँग मिलाउनुपर्छ। मललाई घाममा खुला नछोड्नुहोस्, नत्र नाइट्रोजन उडेर जान्छ।"
+    },
+    {
+      "question": "कृषि चुन प्रयोग गरी अमिलो माटो कसरी सुधार गर्ने?",
+      "answer": "माटोको पीएच ५.५ भन्दा कम भएमा बाली रोप्नुभन्दा ३-४ हप्ताअघि जग्गा तयारी गर्दा प्रति रोपनी २५ देखि ५० केजी कृषि चुन (क्याल्सियम कार्बोनेट) धुलो माटोमा समान रूपले छरेर जोत्नुपर्छ र माटोमा पर्याप्त चिस्यान हुनुपर्छ।"
+    },
+    {
+      "question": "निमको पातबाट जैविक कीटनाशक कसरी बनाउने?",
+      "answer": "५ केजी हरियो निमको पातलाई मसिनो गरी कुटेर १० लिटर पानीमा हाल्नुहोस् र त्यसमा १ लिटर गहुँत मिसाएर ३-४ दिन भिजाउनुहोस्। त्यसपछि कपडाले छानेर १ लिटर झोलमा ४ लिटर पानी र थोरै साबुनको फिँज मिसाएर कीरा लागेको बालीमा छर्कनुहोस्।"
+    }
+  ]
+}

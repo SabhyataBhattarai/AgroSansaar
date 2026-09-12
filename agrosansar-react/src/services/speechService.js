@@ -188,7 +188,7 @@ export const speechService = {
 };
 
 /**
- * Cross-platform Text-To-Speech (Native Android TextToSpeech + Browser Web Speech + Google TTS Stream fallback)
+ * Cross-platform Text-To-Speech (Native Android TextToSpeech + Browser Web Speech + Vercel /api/tts + Google TTS stream)
  */
 export const ttsService = {
   isNative: Capacitor.isNativePlatform(),
@@ -200,7 +200,7 @@ export const ttsService = {
 
     const langCode = language === 'ne' ? 'ne-NP' : 'en-US';
 
-    // 1. Native Capacitor TTS (Uses Android's native TextToSpeech engine)
+    // 1. Native Capacitor TTS (Uses Android's native TextToSpeech engine in APK)
     if (this.isNative) {
       try {
         onStart && onStart();
@@ -220,47 +220,78 @@ export const ttsService = {
     }
 
     // 2. Web Speech Synthesis (Browser)
+    // IMPORTANT: Safari and most desktop browsers DO NOT have a Nepali ('ne') voice pack.
+    // If we call speak() without a voice, Safari silently drops it and never plays sound.
     if ('speechSynthesis' in window && !this.isNative) {
       try {
-        const utterance = new SpeechSynthesisUtterance(text);
-        utterance.lang = langCode;
-        utterance.rate = 0.95;
-        utterance.onstart = () => onStart && onStart();
-        utterance.onend = () => onEnd && onEnd();
-        utterance.onerror = () => {
-          this.fallbackAudioStream(text, language, onStart, onEnd);
-        };
-        window.speechSynthesis.speak(utterance);
-        return;
+        const voices = window.speechSynthesis.getVoices();
+        const hasMatchingVoice = voices.some((v) => 
+          v.lang && (v.lang.toLowerCase().startsWith(language) || v.lang.toLowerCase().replace('_', '-').startsWith(language))
+        );
+
+        // Only use native speechSynthesis if a real voice is actually available
+        if (hasMatchingVoice) {
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = langCode;
+          utterance.rate = 0.95;
+          utterance.onstart = () => onStart && onStart();
+          utterance.onend = () => onEnd && onEnd();
+          utterance.onerror = () => {
+            this.fallbackAudioStream(text, language, onStart, onEnd);
+          };
+          window.speechSynthesis.speak(utterance);
+          return;
+        }
       } catch (e) {
-        console.warn('speechSynthesis failed, falling back to stream:', e);
+        console.warn('speechSynthesis check failed, using audio stream:', e);
       }
     }
 
-    // 3. Audio Stream Fallback (Works everywhere with internet access)
+    // 3. High-Fidelity Audio Stream (Vercel serverless /api/tts with Google fallback)
     this.fallbackAudioStream(text, language, onStart, onEnd);
   },
 
   fallbackAudioStream(text, language, onStart, onEnd) {
     try {
       const tl = language === 'ne' ? 'ne' : 'en';
-      const cleanText = text.replace(/[•\n]/g, ' ').slice(0, 150);
-      const url = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(cleanText)}&tl=${tl}&client=tw-ob`;
-      
-      const audio = new Audio(url);
+      const cleanText = text.replace(/[•\n]/g, ' ').slice(0, 180);
+
+      // On web/Vercel, use our same-origin /api/tts endpoint to prevent 404 referer blocking
+      const isWeb = typeof window !== 'undefined' && window.location && window.location.protocol.startsWith('http');
+      const primaryUrl = isWeb 
+        ? `/api/tts?q=${encodeURIComponent(cleanText)}&tl=${tl}`
+        : `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(cleanText)}&tl=${tl}&client=tw-ob`;
+      const directGoogleUrl = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(cleanText)}&tl=${tl}&client=tw-ob`;
+
+      const audio = new Audio();
+      audio.referrerPolicy = 'no-referrer';
       this.currentAudio = audio;
+
       audio.onplay = () => onStart && onStart();
       audio.onended = () => {
         this.currentAudio = null;
         onEnd && onEnd();
       };
+
       audio.onerror = (e) => {
-        console.warn('Audio stream playback failed:', e);
-        this.currentAudio = null;
-        onEnd && onEnd();
+        console.warn('Primary audio stream failed, attempting direct stream:', e);
+        if (audio.src !== directGoogleUrl) {
+          audio.src = directGoogleUrl;
+          audio.play().catch((err) => {
+            console.warn('Direct fallback also failed:', err);
+            this.currentAudio = null;
+            onEnd && onEnd();
+          });
+        } else {
+          this.currentAudio = null;
+          onEnd && onEnd();
+        }
       };
+
+      audio.src = primaryUrl;
       audio.play().catch((err) => {
-        console.warn('audio.play() error:', err);
+        console.warn('audio.play() policy rejection or error:', err);
+        this.currentAudio = null;
         onEnd && onEnd();
       });
     } catch (err) {

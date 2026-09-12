@@ -170,6 +170,12 @@ export default function AssistantScreen({ language, onToggleLanguage, onBack }) 
                 ? 'यस उपकरणमा स्वचालित आवाज पहिचान उपलब्ध छैन। कृपया तल टाइप गर्नुहोस्।'
                 : 'Speech recognition is not supported on this browser/device. Please type below.'
             );
+          } else if (errCode === 'service-not-allowed') {
+            setPermissionError(
+              language === 'ne'
+                ? 'Safari मा एप्पलले नेपाली आवाज पहिचान समर्थन गर्दैन (Apple Siri limitation)। कृपया Google Chrome प्रयोग गर्नुहोस् वा तल टाइप गर्नुहोस्।'
+                : 'Safari speech recognition is unavailable or Dictation is disabled in Settings. Please use Chrome or type below.'
+            );
           } else if (errCode !== 'NO_SPEECH') {
             setPermissionError(
               language === 'ne'

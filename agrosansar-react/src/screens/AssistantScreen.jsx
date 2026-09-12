@@ -55,27 +55,47 @@ export default function AssistantScreen({ language, onToggleLanguage, onBack }) 
   const audioRef = useRef(null);
   const recognitionRef = useRef(null);
 
+  // Normalize text to unify spelling differences (e.g. गोलभेँडा vs गोलभेडा vs टमाटर)
+  const normalize = (str) => {
+    if (!str) return '';
+    return str
+      .toLowerCase()
+      .replace(/[•\?\!\,\।\.]/g, '')
+      .replace(/ँ/g, '') // Strip chandrabindu so गोलभेँडा and गोलभेडा match identically
+      .replace(/टमाटर/g, 'गोलभेडा')
+      .replace(/\s+/g, ' ')
+      .trim();
+  };
+
   // Initialize Fuzzy Search Index with Fuse.js
   const fuseRef = useRef(null);
   useEffect(() => {
-    const list = qaData[language] || [];
-    fuseRef.current = new Fuse(list, {
-      keys: ['question'],
+    const rawList = qaData[language] || [];
+    const indexedList = rawList.map((item) => ({
+      ...item,
+      normalizedQuestion: normalize(item.question),
+    }));
+
+    fuseRef.current = new Fuse(indexedList, {
+      keys: ['normalizedQuestion', 'question'],
       includeScore: true,
-      threshold: 0.45,
+      threshold: 0.58, // Flexible matching for phrased speech
       ignoreLocation: true,
+      minMatchCharLength: 2,
     });
   }, [language]);
 
   // Answer matching query
   const findAnswer = (query) => {
     if (!query || !fuseRef.current) return;
-    const clean = query.replace('•', '').trim();
-    setQuestion(clean);
+    const cleanDisplay = query.replace('•', '').trim();
+    setQuestion(cleanDisplay);
 
-    const results = fuseRef.current.search(clean);
+    const normalizedQuery = normalize(cleanDisplay);
+    const results = fuseRef.current.search(normalizedQuery);
+    
     let matchedAnswer = t.fallback;
-    if (results && results.length > 0 && results[0].score <= 0.45) {
+    if (results && results.length > 0 && results[0].score <= 0.60) {
       matchedAnswer = results[0].item.answer;
     }
     setAnswer(matchedAnswer);

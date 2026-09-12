@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
-import { Camera, Image as ImageIcon, CheckCircle2, AlertTriangle, ShieldCheck, Stethoscope, Sparkles } from 'lucide-react';
+import { Camera, Image as ImageIcon, CheckCircle2, AlertTriangle, ShieldCheck, Stethoscope, Sparkles, Volume2, VolumeX } from 'lucide-react';
 import diseaseData from '../data/disease_data.json';
+import { ttsService } from '../services/speechService';
 
 const UI_TEXT = {
   ne: {
@@ -42,9 +43,20 @@ export default function DiseaseScreen({ language, onToggleLanguage, onBack }) {
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [diagnosis, setDiagnosis] = useState(null);
 
+  const [isSpeaking, setIsSpeaking] = useState(false);
+
+  // Stop speaking when leaving or resetting
+  useEffect(() => {
+    return () => {
+      ttsService.stop();
+    };
+  }, []);
+
   const handleImageChange = (e) => {
     const file = e.target.files?.[0];
     if (file) {
+      ttsService.stop();
+      setIsSpeaking(false);
       const reader = new FileReader();
       reader.onload = (event) => {
         setSelectedImage(event.target.result);
@@ -54,8 +66,49 @@ export default function DiseaseScreen({ language, onToggleLanguage, onBack }) {
     }
   };
 
+  const toggleSpeakDiagnosis = async () => {
+    if (isSpeaking) {
+      await ttsService.stop();
+      setIsSpeaking(false);
+      return;
+    }
+
+    if (!diagnosis) return;
+
+    // Build clear, natural speech text
+    const title = diagnosis.info.title;
+    const confidenceText = language === 'ne'
+      ? `विश्वसनीयता ${diagnosis.confidence} प्रतिशत।`
+      : `Confidence ${diagnosis.confidence} percent.`;
+
+    let symptomsText = '';
+    if (diagnosis.info.symptoms && diagnosis.info.symptoms.length > 0) {
+      symptomsText = (language === 'ne' ? 'मुख्य लक्षणहरू: ' : 'Key symptoms: ') +
+        diagnosis.info.symptoms.join('. ') + '.';
+    }
+
+    let treatmentText = '';
+    if (diagnosis.info.organic_control) {
+      treatmentText += (language === 'ne' ? 'जैविक रोकथाम: ' : 'Organic control: ') + diagnosis.info.organic_control + '. ';
+    }
+    if (diagnosis.info.chemical_control) {
+      treatmentText += (language === 'ne' ? 'रासायनिक उपचार: ' : 'Chemical control: ') + diagnosis.info.chemical_control + '. ';
+    }
+
+    const fullSpeech = `${title}. ${confidenceText} ${symptomsText} ${treatmentText}`;
+
+    await ttsService.speak(
+      fullSpeech,
+      language,
+      () => setIsSpeaking(true),
+      () => setIsSpeaking(false)
+    );
+  };
+
   const runDiagnosis = () => {
     if (!selectedImage) return;
+    ttsService.stop();
+    setIsSpeaking(false);
     setIsAnalyzing(true);
 
     // Simulate smart TFLite inference handoff
@@ -162,13 +215,32 @@ export default function DiseaseScreen({ language, onToggleLanguage, onBack }) {
                   )}
                 </div>
 
-                <div className="text-right">
-                  <span className="text-[10px] uppercase font-bold text-gray-400 block">
-                    {t.confidence}
-                  </span>
-                  <span className="text-base font-extrabold text-[#1D6737]">
-                    {diagnosis.confidence}%
-                  </span>
+                <div className="flex items-center space-x-2.5">
+                  <div className="text-right">
+                    <span className="text-[10px] uppercase font-bold text-gray-400 block">
+                      {t.confidence}
+                    </span>
+                    <span className="text-base font-extrabold text-[#1D6737]">
+                      {diagnosis.confidence}%
+                    </span>
+                  </div>
+
+                  <button
+                    onClick={toggleSpeakDiagnosis}
+                    className={`w-10 h-10 rounded-full flex items-center justify-center transition-all active:scale-95 shadow-sm ${
+                      isSpeaking
+                        ? 'bg-amber-500 text-white ring-4 ring-amber-300 animate-pulse'
+                        : 'bg-[#DDEECC] text-[#1D6737] hover:bg-emerald-200'
+                    }`}
+                    title={language === 'ne' ? 'नतिजा सुन्नुहोस्' : 'Listen aloud'}
+                    aria-label="Read diagnosis aloud"
+                  >
+                    {isSpeaking ? (
+                      <VolumeX className="w-5 h-5" />
+                    ) : (
+                      <Volume2 className="w-5 h-5" />
+                    )}
+                  </button>
                 </div>
               </div>
             </div>
